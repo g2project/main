@@ -148,6 +148,7 @@ body {
 
   .createAccount {
     color: #4285F4;
+    font-weight: 700;
   }
 
   .createAccount a:visited {

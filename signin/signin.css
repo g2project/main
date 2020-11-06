@@ -73,7 +73,7 @@ body {
     transition: 0.2s;
   }
   
-  .box .inputBox input:focus ~ label,
+  .box .inputBox input:focus ~ label
   .box .inputBox input:valid ~ label,
   .box .inputBox input:not([value=""]) ~ label {
     top: -1.125rem;
