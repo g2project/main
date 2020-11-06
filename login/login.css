@@ -86,7 +86,7 @@ body {
     font-size: 0.9rem;
     color: grey;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   .box .inputBox input:focus ~ label,
@@ -148,6 +148,7 @@ body {
 
   .createAccount {
     color: #4285F4;
+    font-weight: 700;
   }
 
   .createAccount a:visited {

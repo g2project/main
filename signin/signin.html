@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <style>
+
+</style>
+</head>
+<body>
+    <div class="box">
+      <div class="logo">
+        <span style="color: #4285F4">T</span>
+        <span style="color: #EA4335">o</span>
+        <span style="color: #FBBC05">p </span>
+        <span style="color: #34A853">s</span>
+        <span style="color: #4285F4">i</span>
+        <span style="color: #EA4335">g</span>
+        <span style="color: #FBBC05">h</span>
+        <span style="color: #34A853">t</span>
+        <span style="color: #4285F4">s</span>
+      </div>
+      <h2>Create your Top sights Account</h2>
+      <form>
+        <!-- First, last name -->
+        <div class="inputBox">
+          <input class="inputBoxSort" type="text" name="firstname" required onkeyup="this.setAttribute('value', this.value);"  value="">
+          <label>First name</label>
+        </div>
+        <div class="inputBox">
+          <input class="inputBoxSort" type="text" name="lastname" required onkeyup="this.setAttribute('value', this.value);"  value="">
+          <label>Last name</label>
+        </div>
+        <div>
+            <img src="create_account_fill.png">
+        </div>
+
+        <!-- Username -->
+        <div class="inputBox">
+          <input class="username" type="text" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
+          <label>Username</label>
+        </div>
+
+        <div class="canuse">
+          <span>You can letters, numbers & periods</span>
+        </div>
+        <div class="usemy">
+          <span>Use my current email address instead</span>
+        </div>
+
+        <!-- Password -->
+        <div class="inputBox">
+          <input class="inputBoxSort inputPassword" type="password" name="password" required  value="">
+          <label>Passward</label>
+        </div>
+        <div class="inputBox">
+          <input class="inputBoxSort inputPassword" type="password" name="password" required  value="">
+          <label>Confirm</label>
+        </div>
+
+        <div class="use8">
+          <span>Use 8 or more characters with a mix of letters, numbers & symbol</span>
+        </div>
+        <div class="alert">
+          <span>Not your computer? Use a Private Window to sign in. <span>Learn more</span></span>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="bottomLine">
+          <div class="signinstead"><a href="../login/login.html">Sign in instead</a></div>
+          <input type="submit" name="sign-in" value="Next">
+        </div>
+        
+      </form>
+    </div>
+</body>
+</html>
