@@ -1,23 +1,18 @@
-/* * { box-sizing: border-box;} */
-
 body {
     margin: 0;
     padding: 0;
-    /* background-size: cover; */
     font-family: sans-serif;
   }
   
   .box {
     position: relative;
     margin: 3% auto;
-    /* transform: translate(-50%, -50%); */
     width: 42rem;
     padding: 2.5rem;
     box-sizing: border-box;
     border: 1px solid #dadce0;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-
   }
 
   .logo {
@@ -44,15 +39,6 @@ body {
     font-weight: 400;
   }
 
-  /* .box p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: .1px;
-    line-height: 1.5;
-    margin-bottom: 25px;
-    text-align: center;
-  } */
-  
   .box .inputBox {
     position: relative;
     display: inline-block
@@ -67,23 +53,14 @@ body {
     border: 1px solid #ccc;
     background: transparent;
     border-radius: 4px;
-    
   }
 
-  .ib_st {
+  .inputBoxSort {
     width: 150px;
     margin-right: 5px;
     background-color: red;
     margin-bottom: 25px;
   }
-
-  /* .box .inputBox:nth-of-type(1) {
-    margin-bottom: 1.875rem;
-  }
-
-  .box .inputBox:nth-of-type(2) {
-    margin-bottom: 20px;
-  } */
   
   .box .inputBox label {
     position: absolute;
@@ -108,10 +85,12 @@ body {
     padding-left: 5px;
     padding-right: 5px;
   }
+
   .box .inputBox input:focus {
     outline: none;
     border: 2px solid #1a73e8;
   }
+
   .box input[type="submit"] {
     border: none;
     outline: none;
@@ -138,10 +117,10 @@ body {
   }
 
   img {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     top: 120px;
-    right: 30px;
+    right: 50px;
     position: absolute;
   }
 
@@ -162,7 +141,7 @@ body {
     margin-bottom: 40px;
   }
 
-  .confirm {
+  .inputPassword {
     margin-bottom: 5px;
   }
 
@@ -183,16 +162,7 @@ body {
     line-height: 1.5em;
   }
 
-  .alert span > span {
-    font-weight: 600;
-    color: #4285F4;
-  }
-
-  .createAccount {
-    color: #4285F4;
-  }
-
-  .createAccount a:visited {
+  .signinstead a:visited {
     color: #4285F4;
   }
   
@@ -200,6 +170,3 @@ body {
     display: inline;
   }
 
-  .createAccount a {
-    text-decoration: none;
-  }
