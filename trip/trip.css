@@ -1,0 +1,428 @@
+/* 초기화 코드 initialization code */
+@charset "utf-8";
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+* {box-sizing: border-box;}
+/* ------------------------------------ */
+
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: aquamarine;
+    padding-top: 12px;
+    top: 0;
+    z-index: 9999;
+}
+
+#header > div {
+    vertical-align: middle;
+}
+
+.hd_b1 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hd_b2 {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.hd_b1 > div {
+    vertical-align: middle;
+}
+
+.hd_b2 > div {
+    vertical-align: middle;
+}
+
+.hd_c1, .hd_c2 {
+    display: inline-block;
+}
+
+.hd_c2 {
+    margin-left: 20px;
+}
+
+.hd_c1 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c2 p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hd_c3, .hd_c4 {
+    display: inline-block;
+}
+
+.hd_c3 {
+    margin-right: 20px;
+}
+
+.hd_c3 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c4 img {
+    border-radius: 50px;
+}
+/* ------------------------------------ */
+
+
+
+/* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
+
+#sb {
+    margin-top: 60px;
+    padding-top: 5px;
+}
+
+#sb {
+    width: 100px;
+    height: 500px;
+    border: 1px solid red;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    background-color: #fff;;
+}
+
+/* ------------------------------------ */
+
+
+/* 사이드바 */
+#sb > nav > div {
+    margin-bottom: 35px;
+}
+
+.sb_it {
+    text-align: center;
+}
+
+.sb_it svg{
+    width: 24px;
+    height: 24px;
+}
+
+.sb_it button {
+    background-color: #fff;
+    border: none;
+}
+/* ------------------------------------ */
+
+
+
+/* 가운데 맨 위 여행 */
+.main {
+    position: relative;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.travel {
+    position: absolute;
+    top: 88%;
+    left: 47%;
+    font-size: 50px;
+
+} 
+/* ------------------------------------ */ 
+
+
+/* 검색창 */
+.search {
+    position: relative;
+    margin-top: 45px;
+}
+.search1 {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 350px;
+    height: 65px;
+    box-shadow: 3px 3px 5px #c8c8c8;
+}
+
+.search1 > input {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 60px;
+    border: none;
+    font-size: 1.3em;
+}   
+
+.search2 {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/* ------------------------------------ */ 
+
+
+/* 가운데 메뉴 버튼 */
+.menu1 {
+    position: relative;
+    left: 29.5%;
+    margin-top: 30px;
+    width: 40%;
+}
+
+.btn:hover {
+    background-color: #e9e9e9;
+}
+
+.menu2 {
+    position: absolute;
+    left: 20%;
+}
+
+.trip {
+    padding: 15px;
+    float: left;
+}
+/* ------------------------------------ */ 
+
+
+/* 인기 있는 목적지 */
+.popular {
+    position: relative;
+    border: 1px solid #fff;
+    width: 55%;
+    height: 550px;
+    left: 22%;
+    margin-top: 130px;
+    margin-bottom: -20px;
+}
+
+.popular1 {
+    width: 93%;
+    margin: 25px;
+    height: 450px;
+}
+
+.popular2 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: -18px;
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -9999;
+}
+
+.title1, .title2, .title3  {
+    position: absolute;
+    width: 30%;
+    top: 40%;
+    margin: 10px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.title4, .title5, .title6 {
+    position: absolute;
+    width: 30%;
+    top: 80%;
+    margin: 10px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.detailed1, .detailed2, .detailed3, .detailed4, .detailed5, .detailed6 {
+    width: 100%;
+}
+/* ------------------------------------ */ 
+
+
+/* 여행검색 기록설정 */
+.travelpage {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 450px;
+}
+
+.travelpage > img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+.backvisit {
+    line-height: 2.5em;
+    margin: 25px;
+}
+/* ------------------------------------ */ 
+
+
+/* 여행검색 기록설정 */
+.setting {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 55%;
+    height: 400px;
+}
+
+.settingimg > img {
+    margin-left: 340px;
+    width: 33%;
+}
+
+.settingms {
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+.secretweb {
+    margin-top: 35px;
+}
+
+.secret, .web {
+    margin: 0 auto;
+    padding: 16px;
+    border: solid 1px #000;
+    border-color: #c8c8c8;
+    width: 45%;
+    font-size: 1.1em;
+}
+
+.secret {
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+}
+
+.web {
+    border-radius: 0 0 10px 10px;
+}
+
+/* .web {
+    
+} */
+/* ------------------------------------ */ 
+
+
+/* ------------------------------------ */ 
+
+
+/* 내 여행 기능 */
+dl{
+    margin:0 auto;
+    margin-top: 50px;
+    max-width:450px;
+  }
+  
+  dt{
+    background:#fff;
+    font-size: 1.2em;
+    padding:15px;
+    position:relative;
+    text-align:left;
+    text-transform:uppercase;
+    transition: all .5s;
+  }
+  
+  dt:after,dt:before{
+    content:"\f078";
+    font-family:fontAwesome;
+    position:absolute;
+    right:15px;
+    height:28px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    
+    transition:all .7s ease-in-out;
+  }
+  
+  dt:before{
+    opacity:0;
+    transition:all .4s ease-in-out;
+  }
+  
+  dt:hover{
+    cursor:pointer;
+  }
+  
+  dt + dd{
+    max-height:0;
+  }
+  
+  dd{
+    overflow:hidden;
+    padding:1px 15px;
+    font-size: 1.2em;
+    color: #666060;
+    transition: all .5s;
+    line-height: 1.5em;
+  }
+  
+  dt.open{
+    border: 2px solid #000;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    margin:-5px;
+  }
+  
+  dt.open:after{
+    transform:rotate(180deg) translateY(-2px);
+  }
+  dt.open:before{
+    opacity:1;
+    transform:rotate(-360deg) translateY(-3px);
+  }
+  
+  dt.open + dd{
+    border: 2px solid #000;
+    border-radius: 0 0 10px 10px;
+    padding:15px 15px 30px;
+    margin:0 -5px;
+    max-height:240px;
+  }
+/* ------------------------------------ */ 
+
+.footerLink ul {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footerLink li{
+    display: inline-block;
+}
+
+.footerLink a{
+    display: inline-block; /*인라인한 요소에 padding값을 줄경우 display: inline-block 사용해줘야함*/
+    padding: 20px;
+    color: royalblue;
+}
