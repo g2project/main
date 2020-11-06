@@ -423,7 +423,7 @@ p{word-wrap:break-word}
 .ti_wp {
     width: 5500px;
     margin-bottom: 80px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .ti_pd {
