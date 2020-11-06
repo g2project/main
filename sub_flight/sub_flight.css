@@ -1,0 +1,333 @@
+/* 초기화 코드 initialization code */
+@charset "utf-8";
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+* {box-sizing: border-box;}
+/* ------------------------------------ */
+
+
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding-top: 12px;
+    top: 0;
+    z-index: 9999;
+}
+
+#header > div {
+    vertical-align: middle;
+}
+
+.hd_b1 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hd_b2 {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.hd_b1 > div {
+    vertical-align: middle;
+}
+
+.hd_b2 > div {
+    vertical-align: middle;
+}
+
+.hd_c1, .hd_c2 {
+    display: inline-block;
+}
+
+.hd_c2 {
+    margin-left: 20px;
+}
+
+.hd_c1 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c2 p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hd_c3, .hd_c4 {
+    display: inline-block;
+}
+
+.hd_c3 {
+    margin-right: 20px;
+}
+
+.hd_c3 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c4 img {
+    border-radius: 50px;
+}
+/* ------------------------------------ */
+
+
+
+/*container*/
+
+.container{
+    width: 100%;
+
+    padding: 70px 45px;
+    overflow: hidden;
+    margin: 50px 20px;
+    background: #fff;
+    line-height: normal;
+    min-height: 100vh;
+    position: relative
+}
+
+.f_t{
+    display: flex;
+}
+
+h1{
+    margin: 0;
+    position: relative;
+    user-select: none;
+    margin-bottom: 80px;
+}
+
+/* .PkRdvd {
+    display: inline-block;
+    height: 24px;
+    left: 0;
+    opacity: 0.87;
+    position: relative;
+    top: 4px;
+    width: 74px
+} */
+
+.f_s {
+    color: rgba(0, 0, 0, .84);
+    display: inline-block;
+    font-family: Google Sans, Arial, Helvetica, sans-serif;
+    font-size: 22.1px;
+    font-weight: normal;
+    height: 24px;
+    left: 8px;
+    line-height: 1;
+    position: relative;
+    text-rendering: optimizeLegibility;
+    top: -2px
+}
+
+.balloon {
+    background: url(img/flight.JPG) no-repeat center/100%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 400px
+}
+
+.f_cf{
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: Google Sans, Arial, Helvetica, sans-serif;
+}
+
+.f_cp {
+    color: #757575;
+    font-size: 14px;
+    font-family: Google Sans, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* ------------------------------------ */
+
+
+
+
+/* 여행지 목록  */
+
+.s_l {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.e_m {
+    width: 100%;
+    height: 480px;
+    columns: 6;
+}
+
+.t_list {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-right: 16px;
+    width: 100%
+}
+
+.l_f {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: normal;
+    display: inline-block;
+    width: 1063px;
+    
+}
+
+.f_u {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.a_o {
+    width: 50%;
+    height: 280px;
+    margin-top: 30px;
+    float: left;
+    columns: 3;
+}
+
+.am {
+    width: 34%;
+    height: 280px;
+    margin-top: 30px;
+    float: left;
+    columns: 2;
+}
+
+.af {
+    width: 16%;
+    height: 280px;
+    margin-top: 30px;
+    float: left;
+    columns: 1;
+}
+
+ul li {
+    break-inside: avoid;
+    color: #4285f4;
+    -webkit-column-break-inside: avoid;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 9px 0;
+    text-align: -webkit-match-parent;
+}
+
+.name:hover,
+.name:focus {
+    color: #174ea6
+}
+
+/* @media screen and (min-width:600px) {
+    .f_u {
+        columns: 2
+    }
+}
+
+@media screen and (min-width:768px) {
+    .f_u {
+        columns: 3
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .a5KNNc {
+        margin-bottom: 80px
+    }
+    .YgVD9 .f_u {
+        columns: 5
+    }
+    .dFsSF .f_u {
+        columns: 2
+    }
+    .JZAp2 .f_u {
+        columns: 2
+    }
+    .s0uIR .f_u {
+        columns: 1
+    }
+    .dFsSF.a5KNNc {
+        width: 40%
+    }
+    .JZAp2.a5KNNc {
+        width: 40%
+    }
+    .s0uIR.a5KNNc {
+        width: 20%
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .YgVD9 .f_u {
+        columns: 6
+    }
+    .dFsSF .f_u {
+        columns: 3
+    }
+    .JZAp2 .f_u {
+        columns: 2
+    }
+    .s0uIR .f_u {
+        columns: 1
+    }
+    .dFsSF.a5KNNc {
+        width: 50%
+    }
+    .JZAp2.a5KNNc {
+        width: 33.3333%
+    }
+    .s0uIR.a5KNNc {
+        width: 16.6667%
+    }
+} */
+/* ------------------------------------ */
+
+
+
+/* footer */
+.ft_wp {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    border: 1px solid green;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ft_lf a, .ft_lf span{
+    color: #1e90ff;
+    margin-right: 15px;
+}
+
+.ft_lf  {
+   margin-bottom: 10px; 
+}
+/* ------------------------------------ */
