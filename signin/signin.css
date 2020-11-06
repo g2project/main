@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-size: cover;
+    /* background-size: cover; */
     font-family: sans-serif;
   }
   
@@ -11,7 +11,7 @@ body {
     position: relative;
     margin: 3% auto;
     /* transform: translate(-50%, -50%); */
-    width: 30rem;
+    width: 42rem;
     padding: 2.5rem;
     box-sizing: border-box;
     border: 1px solid #dadce0;
@@ -22,43 +22,44 @@ body {
 
   .logo {
     font-size: 0;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 20px;
+    /* text-align: left; */
   }
 
   .logo span {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 22px;
     padding: 0;
     margin-right: 1px;
   }
   
   .box h2 {
-    margin: 0px 0 -0.125rem;
+    margin: 0px 0 40px;
     padding: 0;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     color: #202124;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
     font-size: 24px;
     font-weight: 400;
   }
 
-  .box p {
+  /* .box p {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: .1px;
     line-height: 1.5;
     margin-bottom: 25px;
     text-align: center;
-  }
+  } */
   
   .box .inputBox {
     position: relative;
+    display: inline-block
   }
   
   .box .inputBox input {
-    width: 93%;
+    /* width: 93%; */
     padding: 0.625rem 10px;
     font-size: 0.95rem;
     letter-spacing: 0.062rem;
@@ -69,13 +70,20 @@ body {
     
   }
 
-  .box .inputBox:nth-of-type(1) {
+  .ib_st {
+    width: 150px;
+    margin-right: 5px;
+    background-color: red;
+    margin-bottom: 25px;
+  }
+
+  /* .box .inputBox:nth-of-type(1) {
     margin-bottom: 1.875rem;
   }
 
   .box .inputBox:nth-of-type(2) {
     margin-bottom: 20px;
-  }
+  } */
   
   .box .inputBox label {
     position: absolute;
@@ -85,7 +93,7 @@ body {
     font-size: 0.9rem;
     color: grey;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   .box .inputBox input:focus ~ label,
@@ -129,10 +137,45 @@ body {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
   }
 
-  .forgetPassword {
-    font-weight: 500;
+  img {
+    width: 180px;
+    height: 180px;
+    top: 120px;
+    right: 30px;
+    position: absolute;
+  }
+
+  .username {
+    width: 330px;
+    margin-bottom: 5px;
+  }
+
+  .canuse {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .usemy {
+    font-synthesis: 10px;
+    font-weight: normal;
+    color: #4285F4;
+    margin-bottom: 40px;
+  }
+
+  .confirm {
+    margin-bottom: 5px;
+  }
+
+  .use8 {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .signinstead a {
+    font-weight: 600;
     color: #4285F4;
     margin-bottom: 30px;
+    text-decoration: none;
   }
 
   .alert {
