@@ -317,7 +317,7 @@ p{word-wrap:break-word}
 .pt_im {
     width: 100%;
     height: 9vw;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .pt_im img {
