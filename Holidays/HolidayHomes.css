@@ -1,22 +1,134 @@
+/* 센터 폭 새로 조정 */
+#sb {
+    border: 1px solid red; 
+}
+
+#center {
+    border: 1px solid red; 
+    padding-left: 10px;
+}
+/* -------------------------------- */
+
+
+
+
+
+
+
+/* 지역, 날짜, 명수 선택 */
 .tp_wp {
     border: 1px solid blue;
 }
 
+.tp_fr {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .tp_sr {
-    border: 1px solid red;
+    width: 220px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 1px 5px 1px 10px;
+    margin: 0 10px 30px 0;
+    border: 1px solid #ccc;
+}
+
+.sr_it {
+    display: inline-block;
+    line-height: 4em;
+}
+
+.tp_sr input {
+    border: none;
+    padding: 10px 0;
 }
 
 .tp_dt {
-    border: 1px solid red;
+    padding: 2px 0;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
 }
 
-.tp_nm {
-    border: 1px solid red;
+.tp_dt > div > div {
+    position: relative;
+    display: inline-block;
+}
+
+.tp_dt button {
+    height: 44px;
+    border-radius: 7px;
+    background: #fff;
+    border: none;
+}
+
+.dt_d1~button {
+    width: 130px;
+}
+
+.dt_d2~button {
+    width: 90px;
+}
+
+.dt_dt {
+    font-size: 14px;
+    line-height: 3.0em;
+    position: absolute;
+}
+
+.dt_ci {
+    left: 12px;
+    top: 8px;
+}
+
+.dt_d1 {
+    left: 50px;
+}
+
+.dt_d2 {
+    left: 10px;
+}
+
+.dt_br {
+    height: 32px;
+    top: -7px;
+    border: 1px solid #ccc;
+}
+
+.tp_nb {
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 1px 5px 1px 10px;
+    margin: 0 10px 30px 10px;
+    border: 1px solid #ccc;
+}
+
+.nb_i1 {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    line-height: 3.0em;
+}
+
+.nb_sp {
+    font-size: 14px;
+    position: absolute;
+    left: 44px;
+    line-height: 3.0em;
+}
+
+.nb_i2 {
+    position: absolute;
+    left: 64px;
+    top: 18px;
+    line-height: 3.0em;
 }
 
 .tp_pr {
     border: 1px solid red;
-    width: 120px; height: 50px;
 }
 
 .sl_gr {
