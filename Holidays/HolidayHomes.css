@@ -7,7 +7,7 @@
     border: 1px solid red; 
     padding-left: 10px;
 }
-/* -------------------------------- */
+/* --------------------------- */
 
 
 
@@ -15,7 +15,7 @@
 
 
 
-/* 지역, 날짜, 명수 선택 */
+/* 센터 첫줄: 지역, 날짜, 명수 선택 */
 .tp_wp {
     border: 1px solid blue;
 }
@@ -120,39 +120,80 @@
     line-height: 3.0em;
 }
 
-.nb_i2 {
+.nb_dn {
     position: absolute;
-    left: 64px;
+    right: 12px;
     top: 18px;
-    line-height: 3.0em;
 }
+/* --------------------------- */
 
-.tp_pr {
-    border: 1px solid red;
+
+
+
+
+
+
+/* 센터 둘째줄: hotels, holiday homes, 
+rating, amenities, rooms */
+.sl_it {
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
 }
 
 .sl_gr {
-    border: 1px solid red;
+    font-size: 0;
 }
 
 .sl_ht {
-    border: 1px solid green;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.8em;
+    width: 80px;
+    border-radius: 7px 0 0 7px;
+    border: 1px solid #ccc;
 }
 
 .sl_hh {
-    border: 1px solid green;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.8em;
+    width: 120px;
+    border-radius: 0 7px 7px 0;
+    border: 1px solid #ccc;
 }
 
-.sl_rt {
-    border: 1px solid red;
+.sl_rn {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
 }
 
-.sl_am {
-    border: 1px solid red;
+.sl_rn button {
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 40px;
 }
 
-.sl_rm {
-    border: 1px solid red;
+.sl_rt button {
+    width: 100px;
+}
+
+.sl_am button {
+    width: 120px;
+}
+
+.sl_rm button {
+    width: 100px;
+}
+
+.sl_ct button span {
+    margin-left: -10px;
+}
+
+.nb_dq {
+    top: 13px;
 }
 
 .tl_wp {
