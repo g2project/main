@@ -1,0 +1,328 @@
+/* 초기화 코드 initialization code */
+@charset "utf-8";
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+* {box-sizing: border-box;}
+/* ------------------------------------ */
+
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: aquamarine;
+    padding-top: 12px;
+    top: 0;
+    z-index: 9999;
+}
+
+#header > div {
+    vertical-align: middle;
+}
+
+.hd_b1 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hd_b2 {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.hd_b1 > div {
+    vertical-align: middle;
+}
+
+.hd_b2 > div {
+    vertical-align: middle;
+}
+
+.hd_c1, .hd_c2 {
+    display: inline-block;
+}
+
+.hd_c2 {
+    margin-left: 20px;
+}
+
+.hd_c1 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c2 p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hd_c3, .hd_c4 {
+    display: inline-block;
+}
+
+.hd_c3 {
+    margin-right: 20px;
+}
+
+.hd_c3 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c4 img {
+    border-radius: 50px;
+}
+/* ------------------------------------ */
+
+
+
+/* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
+
+#sb {
+    margin-top: 60px;
+    padding-top: 5px;
+}
+
+#sb {
+    width: 100px;
+    height: 500px;
+    border: 1px solid red;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    background-color: #fff;;
+}
+
+/* ------------------------------------ */
+
+
+/* 사이드바 */
+#sb > nav > div {
+    margin-bottom: 35px;
+}
+
+.sb_it {
+    text-align: center;
+}
+
+.sb_it svg{
+    width: 24px;
+    height: 24px;
+}
+
+.sb_it button {
+    background-color: #fff;
+    border: none;
+}
+/* ------------------------------------ */
+
+
+
+/* 가운데 맨 위 호텔 */
+.main {
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    z-index: -999;
+}
+
+.hotel {
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    font-size: 55px;
+} 
+/* ------------------------------------ */ 
+
+
+/* 검색창 */
+.search {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 950px;
+    height: 62px;
+    border: 1px solid #c8c8c8;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px #c8c8c8;
+}
+.search1 {
+    border-radius: 30px 0 0 30px;
+    width: 400px;
+    height: 60px;
+    background-color: rgb(232,240,254);
+}
+
+.search1 > input {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 60px;
+    border: none;
+    font-size: 1.4em;
+    width: 300px;
+    background-color: rgb(232,240,254);
+}   
+
+.search2 {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+/* ------------------------------------ */
+
+
+/* 인기 있는 목적지 - left */
+.popular {
+    position: relative;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.pop_ms {
+    margin-left: 40px;
+    padding:15px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.pop_con {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 300px;
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
+}
+
+
+.left {
+    width: 36%;
+    height: 300px;
+    float: left;
+}
+
+.left img {
+    width: 100%;
+    height: 298px;
+    border-radius: 20px 0 0 20px;
+}
+
+/* ------------------------------------ */
+
+
+/* 인기 있는 목적지 - right */
+.right {
+    /* border: 1px solid #000; */
+    border-radius: 0 20px 20px 0;
+    width: 64%;
+    height: 298px;
+    overflow: hidden;
+    position: relative;
+    padding: 25px 0 25px 10px;
+}
+
+.slideshow {
+    /* border: 1px solid red; */
+    height: 298px;
+    min-width: 1100px;
+    position: absolute;
+}
+
+.slideshow-slides {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slideshow-slides .slide {
+    /* height: 100%; */
+    overflow: hidden;
+    position: absolute;
+    border-style: none;
+    border-radius: 10px;         
+}
+
+.slideshow-slides .slide:hover {
+    box-shadow: 3px 3px 6px #ccc;
+}
+
+
+.slideshow-nav {
+    position: relative;
+}
+ .slideshow-nav a {
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.slideshow-nav a:before {
+    content: url(../projectimg/sprites.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.slideshow-nav a {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 96%;
+    margin-top: -180px;
+}
+
+.slideshow-nav a.prev {
+    margin-left: -590px;
+}
+
+.slideshow-nav a.prev:before {
+    margin-top: -20px;
+}
+
+.slideshow-nav a.next {
+    margin-left: 4px;
+}
+
+.slideshow-nav a.next:before {
+    margin-top: -20px;
+    margin-left: -80px;        
+}
+
+.slideshow-nav a.disabled {
+    display: none;
+} 
+
+/* ------------------------------------ */
+
+.bb1 {
+    width: 210px;
+    height: 85px;
+    border: 1px solid #c8c8c8;
+    border-radius: 0 0 10px 10px;
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+.ye {
+    color: yellow;
+    text-shadow: -1px 0 rgb(124, 124, 124),
+	       0 1px  rgb(124, 124, 124),
+	       1px 0 rgb(124, 124, 124),
+           0 -1px rgb(124, 124, 124);
+    line-height: 2em;
+}
+
+/* ------------------------------------ */
