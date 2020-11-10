@@ -7,6 +7,7 @@
     <title>Things to do</title>
         <!-- <style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
         </style> -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link href="flight.css" rel="stylesheet" type="text/css">
@@ -203,7 +204,6 @@
             <div style="overflow: hidden; position: absolute; top: 0px; visibility: hidden; width: 328px; z-index: 991; height: 0px; margin-top: 57px; right: 0px; margin-right: 4px; transition: height 0.3s ease-in-out 0s;">
                 <iframe role="presentation" frameborder="0" scrolling="no" src="https://ogs.google.com/u/0/widget/app?origin=https%3A%2F%2Fwww.google.com&amp;cn=app&amp;pid=269&amp;spid=405&amp;hl=en-GB" style="height: 100%; width: 100%; visibility: hidden;"></iframe>
             </div>
-
             <div class="gb_5a gb_F gb_l gb_6a" aria-label="Account Information" aria-hidden="true" img-loaded="1">
                 <div class="gb_eb">
                     <div class="gb_fb">
@@ -229,7 +229,6 @@
                     Manage your Google Account
                 </a>
             </div>
-
             <div class="gb_Kb gb_Nb">
                 <div class="gb_kg gb_kc gb_Fa">
                     <div class="gb_lc">
@@ -547,35 +546,54 @@
             <!-- 예약 체크 -->
             <div class="flight_form_card">
                 <div class="flight_form_mb">
-                    왕복 승객1명 이코노미
+                    <div>왕복 </div>
+                    <div>승객1명</div>
+                    <div>이코노미</div>
                 </div>
-                <div class="flight_rbox">
 
+                <div class="flight_rbox">
+                    <div class="rbox_1">
+                        <input type="text" placeholder = "서울특별시"> <i class="fas fa-exchange-alt"></i> 
+                        <input type="text" placeholder = "예: 플로리다"> 
+                    </div>
+                    <div class="rbox_2">
+                        <div class="rbox_3"><i class="fas fa-calendar-check"></i>11월 23일(월)</div>
+                        <div class="rbox_4">11월 27일(금)</div>
+                    </div>
                 </div>
+
                 <div class="flight_form_search">
-                    검색
+                    <i class="fas fa-search"></i>검색
                 </div>
             </div>
 
             <!-- 목적지 둘러보기-->
             <div class="flight_popular">
-                <div class="flight_pt">
+                <div class="flight_popular_left">
+                    <div class="flight_pt">
                     승객 1명의 요금
-                </div>
-                <div class="flight_dt">
-                    목적지 둘러보기
-                </div>
-                <div class="p_box">
-                    쿠알라룸푸르
-                </div>
-                <div class="p_box">
-                    다낭
-                </div>
-                <div class="p_box">
-                    마닐라
-                </div>
-                <div class="map">
-                    지도
+                    </div>
+                    <div class="flight_dt">
+                        목적지 둘러보기
+                    </div>
+                    
+                    <div class="pboxmap">
+                        <div class="pbox">
+                            <div class="p_box">
+                                <img src="img/img_01.jfif"> 다낭
+                            </div>
+                            <div class="p_box">
+                                <img src="img/img_02.jfif"> 호치민 
+                            </div>
+                            <div class="p_box">
+                                <img src="img/img_03.jfif"> 마닐라
+                            </div>
+                        </div>
+                    
+                        <div id="mp_wp">
+                            <div id="map"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -583,7 +601,7 @@
             <footer>
                 <div class="footer_flt">
                     <div class="flt_box">
-                        <div class="flt_t">
+                        <div class="flt_t1">
                             <h3>Google 항공편 검색</h3>
                         </div>
                         <div class="flt_t">
@@ -617,6 +635,67 @@
                     </div> 
                 </div>
             </footer>
-        </div>                        
+        </div>
+        
+        <script>
+            let map;
+    
+            function initMap() {
+        
+                var styleArray = [
+                    {
+                        featureType: 'all',
+                        stylers:[
+                            {saturation: -80}
+                        ]
+                    },
+                    {
+                        featureType: 'foad.arterial',
+                        elementType: 'gemetry',
+                        stylers:[
+                            {hue: '#00ffee'},
+                            {saturation: -50}
+                        ]
+                    },
+                    {
+                        featureType: 'poi.business',
+                        elementType: 'labels',
+                        stylers:[
+                            {visibility: 'off'}
+                        ]
+                    }
+                ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 7,
+            center: new google.maps.LatLng( 37.568813, 126.987211),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var marker, i;
+
+            for (i = 0; i < locations.length; i++) {  
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                map: map
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                infowindow.setContent(locations[i].place);
+                infowindow.open(map, marker);
+                }
+            })(marker, i));
+            }
+
+            }
+
+            const locations = [];
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqxghuqNb8gdkUV2yupr6PLdcvOEG_k&callback=initMap"></script>
+        <script src="sub_main.js"></script>
+        </script>
 </body>
 </html>
