@@ -17,6 +17,7 @@
 
 /* 센터 첫줄: 지역, 날짜, 명수 선택 */
 .tp_wp {
+    margin-bottom: 30px;
     border: 1px solid blue;
 }
 
@@ -31,7 +32,7 @@
     height: 50px;
     border-radius: 7px;
     padding: 1px 5px 1px 10px;
-    margin: 0 10px 30px 0;
+    margin: 0 10px 0 0;
     border: 1px solid #ccc;
 }
 
@@ -102,14 +103,14 @@
     height: 50px;
     border-radius: 7px;
     padding: 1px 5px 1px 10px;
-    margin: 0 10px 30px 10px;
+    margin: 0 10px;
     border: 1px solid #ccc;
 }
 
 .nb_i1 {
     position: absolute;
     left: 14px;
-    top: 12px;
+    top: 14px;
     line-height: 3.0em;
 }
 
@@ -134,7 +135,7 @@
 
 
 /* 센터 둘째줄: hotels, holiday homes, 
-rating, amenities, rooms */
+rating, amenities, rooms, .md_hr */
 .sl_it {
     display: inline-block;
     height: 40px;
@@ -196,20 +197,154 @@ rating, amenities, rooms */
     top: 13px;
 }
 
-.tl_wp {
+.sl_wp {
+    margin-bottom: 16px;
     border: 1px solid red;
 }
 
-.tl_hh {
+.md_hr {
+    width: 100%;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+/* --------------------------- */
+
+
+
+
+
+
+
+/* 상품 */
+.pt_wp {
+    border: 1px solid blue;
+}
+
+.tl_wp {
+    height: 40px;
+    border: 1px solid red;
+}
+
+.tl_or  {
+    display: inline-block;
+}
+
+.tl_hu {
+    line-height: 2.5em;
+    font-weight: 500;
+    font-size: 15px;
     border: 1px solid red;
 }
 
 .tl_bm {
-    border: 1px solid red;
+    float: right;
+    width: 180px;
+    height: 35px;
+    position: relative;
+    color: #1967d2;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 20px;
+    border-radius: 30px;
+    line-height: 2.5em;
+    background-color: #e8f0fe;
+}
+
+.tl_dn {
+    right: 15px;
 }
 
 .pt_fr {
-    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.pt_in {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.pt_da {
+    padding: 20px;
+    width: 440px;
+}
+
+.pt_l1 {
+    font-weight: 400;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.pt_l2 {
+    margin-bottom: 30px;
+}
+
+.pt_hd {
+    display: none;
+}
+
+.pt_pr {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pt_fc span {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.pt_bz {
+    display: inline-block;
+}
+
+.pt_zz {
+    float: right;
+}
+
+.pt_zx {
+    /* width: 50px;
+    height: 20px; */
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+
+.pt_zz button {
+    background-color: #1a73e8;
+    border: none;
+    width: 120px;
+    height: 36px;
+    font-weight: 700px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.pt_io {
+    width: 290px;
+    height: 198px;
+    border-radius: 7px 0 0 7px;
+    float: left;
+    overflow: hidden;
+}
+
+.pt_ip {
+    width: 5500px;
+    height: 198px;
+    font-size: 0;
+}
+
+.pt_ip img {
+    width: 290px;
+    height: 198px;
+    border-radius: 7px 0 0 7px;
+    object-fit: cover;
 }
 
 .bt_nt {
