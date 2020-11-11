@@ -269,7 +269,7 @@ p{word-wrap:break-word}
 }
 
 .slideshow-nav a:before {
-    content: url(../projectimg/sprites.png);
+    content: url(https://github.com/g2project/main/blob/main/hotels/image/sprites.png?raw=true);
     display: inline-block;
     font-size: 0;
     line-height: 0;
