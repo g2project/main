@@ -316,6 +316,12 @@ rating, amenities, rooms, .md_hr */
     margin-top: 10px;
 }
 
+.pt_zx img {
+    width: 8px;
+    height: 8px;
+    object-fit: cover;
+}
+
 .pt_zz button {
     background-color: #1a73e8;
     border: none;
