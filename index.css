@@ -103,7 +103,7 @@ p{word-wrap:break-word}
 }
 
 #sb {
-    width: 100px;
+    width: 92px;
     height: 500px;
     /* border: 1px solid red; */
     text-align: center;
@@ -142,21 +142,42 @@ p{word-wrap:break-word}
 
 /* 사이드바 */
 #sb > nav > div {
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
 }
 
 .sb_it {
     text-align: center;
 }
 
-.sb_it svg{
+.sb_svg {
     width: 24px;
     height: 24px;
+    fill: #626567;
 }
 
 .sb_it button {
+    width: 90px;
+    height: 90px;
     background-color: #fff;
+    border-radius: 2px;
     border: none;
+}
+
+.sb_btn:hover {
+    background-color: #eff0f1;
+    cursor: pointer;
+}
+
+.sb_btn_active {
+    color: #1967d2;
+}
+
+.sb_svg_active {
+    fill: #1967d2;
+}
+
+.sb_btn_active:hover {
+    background-color: #e8f0fe;
 }
 /* ------------------------------------ */
 
