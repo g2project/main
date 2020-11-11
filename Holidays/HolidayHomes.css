@@ -272,7 +272,7 @@ rating, amenities, rooms, .md_hr */
 
 .pt_da {
     padding: 20px;
-    width: 440px;
+    width: calc(100% - 290px - 20px);
 }
 
 .pt_l1 {
@@ -281,8 +281,9 @@ rating, amenities, rooms, .md_hr */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 400px;
+    width: 100%;
     margin-bottom: 10px;
+    /* border: 1px solid red; */
 }
 
 .pt_l2 {
