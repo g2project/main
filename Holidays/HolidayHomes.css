@@ -1,10 +1,10 @@
 /* 센터 폭 새로 조정 */
 #sb {
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 
 #center {
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     padding-left: 10px;
 }
 /* --------------------------- */
@@ -18,7 +18,7 @@
 /* 센터 첫줄: 지역, 날짜, 명수 선택 */
 .tp_wp {
     margin-bottom: 30px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .tp_fr {
@@ -199,7 +199,7 @@ rating, amenities, rooms, .md_hr */
 
 .sl_wp {
     margin-bottom: 16px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .md_hr {
@@ -217,12 +217,13 @@ rating, amenities, rooms, .md_hr */
 
 /* 상품 */
 .pt_wp {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .tl_wp {
     height: 40px;
-    border: 1px solid red;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
 }
 
 .tl_or  {
@@ -233,7 +234,7 @@ rating, amenities, rooms, .md_hr */
     line-height: 2.5em;
     font-weight: 500;
     font-size: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .tl_bm {
@@ -266,7 +267,7 @@ rating, amenities, rooms, .md_hr */
     display: inline-block;
     vertical-align: top;
     height: 200px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .pt_da {
@@ -354,30 +355,92 @@ rating, amenities, rooms, .md_hr */
 
 /* bottom line */
 .bt_nt {
-    width: 120px;
+    width: 100px;
     height: 36px;
-    margin: 0 auto;
+    position: relative;
+    margin: 50px auto;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 14px;
-    /* text-align: center; */
+    text-align: center;
     color: #1a73e8;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+.bt_tx {
+    line-height: 2.5em;
+} 
 
-
-.bt_cr {
-    border: 1px solid red;
+.bt_rb {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 40px;
 }
 
-.bt_ad {
-    border: 1px solid red;
+.md_bh {
+    margin-bottom: 40px;
 }
-.bt_al {
-    border: 1px solid red;
+
+.bt_cc {
+    text-align: center;
+    position: relative;
+}
+
+.bt_cc button{
+    width: 200px;
+    height: 36px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.bt_cc button > span > span:nth-child(3) {
+    font-weight: 600;
+}
+
+.bt_da {
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+.bt_if {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+.bt_if > div {
+    margin-bottom: 10px;
+}
+
+.bt_bf {
+    font-weight: 600;
+}
+
+.if_ah {
+    color: #1a73e8;
+}
+
+.bt_lk div {
+    display: inline-block;
+    margin-right: 15px;
+    color: #1a73e8;
+    /* border: 1px solid red; */
+}
+
+.bt_lk a {
+    color: #1a73e8;
 }
 
 .bt_mr {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
