@@ -317,9 +317,7 @@ rating, amenities, rooms, .md_hr */
 }
 
 .pt_zx img {
-    width: 8px;
-    height: 8px;
-    object-fit: cover;
+    display: none;
 }
 
 .pt_zz button {
