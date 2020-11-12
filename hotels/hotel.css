@@ -237,15 +237,15 @@ p{word-wrap:break-word}
 
 
 /* 인기 있는 목적지 - right */
-.right {
-    /* border: 1px solid #000; */
+/* .right {
+    border: 1px solid #000;
     border-radius: 0 20px 20px 0;
     width: 64%;
     height: 298px;
     overflow: hidden;
     position: relative;
     padding: 25px 0 25px 10px;
-}
+} */
 
 .slideshow {
     /* border: 1px solid red; */
@@ -253,6 +253,7 @@ p{word-wrap:break-word}
     min-width: 1100px;
     /* position: absolute; */
     position: relative;
+    overflow: hidden;
 }
 
 .slideshow-slides {
