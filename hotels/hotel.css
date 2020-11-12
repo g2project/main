@@ -251,7 +251,8 @@ p{word-wrap:break-word}
     /* border: 1px solid red; */
     height: 298px;
     min-width: 1100px;
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
 }
 
 .slideshow-slides {
