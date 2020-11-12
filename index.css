@@ -313,6 +313,32 @@ p{word-wrap:break-word}
 
 
 
+/* Box-shadow */
+.bx_hs {
+    transition: box-shadow .1s;
+}
+
+.bx_hs:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(33, 3, 33, .2);
+}
+
+.bx_ts {
+    transition: box-shadow .1s;
+}
+
+.bx_ts:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(20, 20, 20, 0.2);
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
 /* Top sights 상품 */
 .ts_wp {
     margin-bottom: 30px;
@@ -480,15 +506,15 @@ p{word-wrap:break-word}
     width: 115px;
     height: 115px;
     /* border: 1px solid #ccc; */
-    /* border-radius: 10px; */
-    margin-right: 0;
+    border-radius: 10px;
+    margin-right: 5px;
     display: inline-block;
     position: relative;
 }
 
 .ti_pt img {
-    width: 110px;
-    height: 110px;
+    width: 115px;
+    height: 115px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -613,7 +639,7 @@ p{word-wrap:break-word}
 }
 
 .sg_it {
-    /* border: 1px solid blue; */
+    border: 1px solid #ccc;
     width: 230px;
     height: 300px;
     border-radius: 8px;

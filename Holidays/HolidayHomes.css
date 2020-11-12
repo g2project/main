@@ -256,7 +256,7 @@ rating, amenities, rooms, .md_hr */
 }
 
 .pt_fr {
-    width: 100%;
+    width: 99%;
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 7px;
@@ -351,6 +351,32 @@ rating, amenities, rooms, .md_hr */
     object-fit: cover;
 }
 /* --------------------------- */
+
+
+
+
+
+
+
+/* Box-shadow */
+.bx_hv {
+    transition: box-shadow .1s;
+}
+
+.bx_hv:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(33, 3, 33, .2);
+}
+
+.bx_ts {
+    transition: box-shadow .1s;
+}
+
+.bx_ts:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(20, 20, 20, 0.2);
+}
+/* ------------------------------------ */
 
 
 
