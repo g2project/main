@@ -101,6 +101,10 @@ aside::-webkit-scrollbar-track {
   display: flex;
   padding:24px 22px;
 }
+.hd1 img{
+    width: 82px;
+    height: 90px;
+}
 .hd1 button{
     color: #1A73E8;
     border:none;
@@ -109,8 +113,24 @@ aside::-webkit-scrollbar-track {
 .hd1 :nth-child(1){
   flex-grow: 3;
 }
+
 .hd1 :nth-child(2){
   flex-grow: 1;
+}
+.hd2{
+    text-align: right;
+}
+.hd3{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.hd3 span{
+    font-size: 12px;
+    color:#888;
+}
+.hd3 button{
+ padding: 0px;   
 }
 .mp{
     
@@ -152,22 +172,21 @@ aside::-webkit-scrollbar-track {
             </div>
         </div>
        <div class="hd1">
-           <div>
+           <div class="hd3">
                <div>경복궁</div>
                <div>
                    <span>고궁</span>
                 </div>
                <button>장소 세부정보</button>
-           </div>
-           
-           <div>
-               <img src="C:\Users\Administrator\Desktop\gbg.png">
+           </div>     
+           <div class="hd2">
+               <img src="img\gbg.png">
            </div>
        </div>
        <hr>
        <div class="m1">
-           <span class="mdm">Md Alamin Hossain</span>
-           <div class="mdm">(Google 번역 제공) 당신은 서울에 있지만이 곳을 방문하지 않으면 한국의 많은 전통이 빠져 있습니다. 많은 외국인 이이 장소를 방문하고 서울에서 5 정거장 떨어져 있습니다.
+           <span class="mdm"><img scr="">Md Alamin Hossain</span>
+           <div class="mdm">당신은 서울에 있지만이 곳을 방문하지 않으면 한국의 많은 전통이 빠져 있습니다. 많은 외국인 이이 장소를 방문하고 서울에서 5 정거장 떨어져 있습니다.
             <br><br>
             한복 한국 전통 복장을 입고 한국 전통 공연을 즐길 수 있습니다. 이 궁전의 내부는 훨씬 더 아름답습니다. 아름다운 호수와 옛 왕의 집, 많은 트레스, 집은 정말 아름답게 만들어졌습니다. 오른쪽에는 오래된 한국 살롱, 스파, 스튜디오 및 큰 박물관이 있습니다.
             <br>
@@ -180,6 +199,18 @@ aside::-webkit-scrollbar-track {
                <button><i class="far fa-thumbs-up"></i><span>좋아요</span></button>
                <button><i class="fas fa-share-alt"></i><span>공유</span></button>
            </div>
+       </div>
+       <img src="img/yss.png">
+       <div>
+          <div>
+              in Front of the palace
+          </div>
+       </div>
+       <img src="img/pp.png">
+       <div>
+          <div>
+            I took pictures with a lot of people. 
+          </div>
        </div>
     </aside>
     <!-- 버튼 -->
@@ -195,9 +226,6 @@ aside::-webkit-scrollbar-track {
             <!-- </div> -->
         </div>
     <!-- </div> -->
-</div>
-<div>
-
 </div>
     <script>
         let map;
