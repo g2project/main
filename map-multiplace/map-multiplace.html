@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>map-mutiplace</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+  /* 구글 지도 */
+#mp_wp {
+    top:10%;
+    left:35%;
+    width:  65%;
+    height: 100%;
+    position: fixed;
+    /* visibility: hidden; */
+}
+
+</style>
+<body>
+<!-- 헤더시작 -->
+<header class="" id="header">
+
+    <!-- 삼선클릭시 왼쪽 사이드바 생성+슬라이딩 -->
+    <!-- <div class="">
+        <div class="gb_Ic gb_Fc gb_Mc" ng-non-bindable="" role="navigation">
+            <div class="gb_Rc">
+                <div class="gb_sc">
+                    <div class="gb_tc">
+                        <a class="gb_we gb_uc" aria-label="Google" href="/">
+                            <span class="gb_va gb_te" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gb_Nc">
+                <div class="fFqfw" jsname="U0exHf" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQxqwEegQIABAC" jsowner="ow3">
+                    <div class="RCfRZd">
+                        <div class="OXZ8S " data-tab="12" jsaction="click:Gux73b" role="link" aria-label="Trips" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAD">
+                            <div class="kvOb8">
+                                <span class="DPvwYc KJackd" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M13.97 5.34c.01-.11.03-.22.03-.34 0-1.1-.9-2-2-2s-2 .9-2 2c0 .12.02.23.03.34A5.997 5.997 0 0 0 6 11v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-2.62-1.69-4.85-4.03-5.66zM12 4c.55 0 1 .45 1 1 0 .03-.01.06-.02.09-.32-.06-.64-.09-.98-.09s-.66.03-.98.09C11.01 5.06 11 5.03 11 5c0-.55.45-1 1-1zm3 14H9v-1.5h6V18zm-2.06-6.06L12 14l-.94-2.06L9 11l2.06-.94L12 8l.94 2.06L15 11l-2.06.94z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Trips
+                            </div>
+                        </div>
+                        <div class="OXZ8S qs41qe" data-tab="15" jsaction="click:Gux73b" role="link" aria-label="Selected tab: Things to do" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAE">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    camera_alt
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Things to do
+                            </div>
+                        </div>
+                        <div class="OXZ8S " data-tab="7" jsaction="click:Gux73b" role="link" aria-label="Flights" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAF">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    flight
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Flights
+                            </div>
+                        </div>
+                        <div class="OXZ8S " data-tab="8" jsaction="click:Gux73b" role="link" aria-label="Hotels" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAG">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    hotel
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Hotels
+                            </div>
+                        </div>
+                        <div class="OXZ8S " data-tab="14" jsaction="click:Gux73b" role="link" aria-label="Holiday homes" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAH">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    house
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Holiday homes
+                            </div>
+                        </div>
+                        <div class="JQSOic">
+                            <div class="OXZ8S " data-id="2-hmit" jsaction="click:Y0OMn" role="link" aria-label="Tracked flight prices" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAI">
+                                <div class="kvOb8">
+                                    <i class="material-icons-extended KJackd" aria-hidden="true">
+                                        timeline
+                                    </i>
+                                </div>
+                                <div class="T7XnYe pJYzRb">
+                                    Tracked flight prices
+                                </div>
+                            </div>
+                            <div class="OXZ8S eLNT1d" data-id="12-hmit" jsaction="click:Y0OMn" role="link" aria-label="Change language" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAJ">
+                                <div class="kvOb8">
+                                    <i class="material-icons-extended KJackd" aria-hidden="true">
+                                        language
+                                    </i>
+                                </div>
+                                <div class="T7XnYe pJYzRb">
+                                    Change language
+                                </div>
+                            </div>
+                            <div class="OXZ8S eLNT1d" data-id="4-hmit" jsaction="click:Y0OMn" role="link" aria-label="Change currency" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAK">
+                                <div class="kvOb8">
+                                    <i class="material-icons-extended KJackd" aria-hidden="true">
+                                        attach_money
+                                    </i>
+                                </div>
+                                <div class="T7XnYe pJYzRb">
+                                    Change currency
+                                </div>
+                            </div>
+                            <div class="OXZ8S eLNT1d" data-id="11-hmit" jsaction="click:Y0OMn" role="link" aria-label="Change country" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAL">
+                                <div class="kvOb8">
+                                    <i class="material-icons-extended KJackd" aria-hidden="true">
+                                        edit_location
+                                    </i>
+                                </div>
+                                <div class="T7XnYe pJYzRb">
+                                    Change country
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="JQSOic CelpRe">
+                        <div class="OXZ8S " data-id="6-hmit" jsaction="click:Y0OMn" role="link" aria-label="Feedback" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAM">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    feedback
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Feedback
+                            </div>
+                        </div>
+                        <div class="OXZ8S " data-id="7-hmit" jsaction="click:Y0OMn" role="link" aria-label="Help" tabindex="0" data-ved="2ahUKEwjuyoToot_sAhUI6b0KHU6NAccQ36MCegQIABAN">
+                            <div class="kvOb8">
+                                <i class="material-icons-extended KJackd" aria-hidden="true">
+                                    help
+                                </i>
+                            </div>
+                            <div class="T7XnYe pJYzRb">
+                                Help
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 헤더 내부 박스1 - 좌측(버거메뉴+사이트로고+가운데 빈부분까지) -->
+    <div class="hd_b1">
+        
+        <!-- 버거메뉴 -->
+        <div class="hd_c1">
+            <svg focusable="false" viewBox="0 0 24 24">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+        </div>
+
+        <!-- <div class="gb_yc gb_Cc gb_Fa" aria-label="Close" role="button" tabindex="0">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            </svg>
+        </div> -->
+
+        <!-- 사이트로고 -->
+        <div class="hd_c2">
+            <a class="" href="#">
+                <p>Top Sights</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="hd_b2">
+        <!-- 헤더 오른쪽 그리드메뉴 -->
+        <div class="hd_c3">
+            <a class="" href="#">
+                <svg class="gb_8e" focusable="false" viewBox="0 0 24 24">
+                    <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- 헤더 오른쪽 사용자 이름로고 -->
+        <div class="hd_c4">
+            <a class="" href="./login/login.html">
+                <img class="" src="https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s32-c-mo" srcset="https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="">
+            </a>
+        </div>
+    </div>
+    
+    <!--계정정보 -->
+    <!-- <div>
+        <div style="overflow: hidden; position: absolute; top: 0px; visibility: hidden; width: 328px; z-index: 991; height: 0px; margin-top: 57px; right: 0px; margin-right: 4px; transition: height 0.3s ease-in-out 0s;">
+            <iframe role="presentation" frameborder="0" scrolling="no" src="https://ogs.google.com/u/0/widget/app?origin=https%3A%2F%2Fwww.google.com&amp;cn=app&amp;pid=269&amp;spid=405&amp;hl=en-GB" style="height: 100%; width: 100%; visibility: hidden;"></iframe>
+        </div>
+
+        <div class="gb_5a gb_F gb_l gb_6a" aria-label="Account Information" aria-hidden="true" img-loaded="1">
+            <div class="gb_eb">
+                <div class="gb_fb">
+                    <img class="gb_Ma gbip gb_jb" src="https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s83-c-mo" title="Profile" alt="" aria-hidden="true" srcset="https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s83-c-mo 1x, https://lh3.googleusercontent.com/ogw/ADGmqu-VCEuI2yv0sSZS3OOMMnzH2FZd8hxmH7_aisAu=s192-c-mo 2x " data-iml="656252.9849999992">
+                    <div class="gb_nb gb_jb">
+                        <a class="gb_ob gb_dg gb_jb gb_ig" aria-label="Change profile picture." href="https://myaccount.google.com/?utm_source=OGB" target="_blank">
+                            <svg class="gb_pb" enable-background="new 0 0 24 24" focusable="false" height="26" viewBox="0 0 24 24" width="18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H4V7h16v12zM12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gb_gb">
+            <div class="gb_qb gb_rb">
+                Junggeun Yi
+            </div>
+            <div class="gb_sb">
+                mazia6513@gmail.com
+            </div>
+            <a class="gb_wb gb_eg gbp1 gb_2e gb_8c" href="https://myaccount.google.com/?utm_source=OGB&amp;utm_medium=act" target="_blank">
+                Manage your Google Account
+            </a>
+        </div>
+
+        <div class="gb_Kb gb_Nb">
+            <div class="gb_kg gb_kc gb_Fa">
+                <div class="gb_lc">
+                </div>
+            </div>
+            <div class="gb_hg gb_Rb" aria-hidden="false">
+                <a class="gb_Qb gb_1b" href="/travel/things-to-do?g2lb=2502548,4258168,4270442,4271060,4306835,4317915,4322823,4328159,4344615,4371335,4401769,4419364,4428793,4433754,4447566,4452530,4458303,4270859,4284970,4291517,4412693&amp;hl=en-KR&amp;gl=kr&amp;un=1&amp;dest_mid=/m/03v6t7&amp;dest_state_type=main&amp;dest_src=ts&amp;sa=X&amp;ved=2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0&amp;authuser=0" target="_blank" rel="noreferrer" aria-hidden="true">
+                    <img class="gb_3b gb_jb" src="https://lh3.googleusercontent.com/-9bHSrRt58O8/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl0JampIw0KOR7XprlfQMJSUebC8g/s48-c/photo.jpg" alt="" aria-hidden="true" data-iml="656408.6399999997">
+                    <div class="gb_Tb">
+                        <div class="gb_9b">
+                            Default
+                        </div>
+                        <div class="gb_5b">
+                            Junggeun Yi
+                        </div>
+                        <div class="gb_7b" dir="ltr">
+                            mazia6513@gmail.com
+                        </div>
+                    </div>
+                </a>
+                <div class="gb_Qb gb_Ob" tabindex="0" role="group" aria-haspopup="true" aria-expanded="false">
+                    <img class="gb_3b gb_jb" src="https://lh3.googleusercontent.com/-ekm9xgupXII/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck64wKv7jSME5VTZavDHtMTOlWRNw/s48-c/photo.jpg" alt="" aria-hidden="true" data-iml="656409.1599999992">
+                    <div class="gb_Tb">
+                        <div class="gb_9b">
+                            Signed out
+                        </div>
+                        <div class="gb_5b">
+                            주식회사지앤씨테크
+                        </div>
+                        <div class="gb_7b gb_8b" dir="ltr">
+                            gnctech1@gmail.com
+                        </div>
+                        <div class="gb_Db" aria-hidden="true">
+                            <svg class="gb_Eb" focusable="false" height="20" viewBox="0 0 20 20" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0h20v20H0V0z" fill="none"></path>
+                                <path d="M6.18 7L10 10.82 13.82 7 15 8.17l-5 5-5-5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gb_ac">
+                        <a class="gb_Wb gb_Zb gb_Xb" aria-hidden="true" aria-label="Sign in" role="link" href="https://accounts.google.com/AccountChooser?source=ogb&amp;continue=https%3A%2F%2Fwww.google.com%2Ftravel%2Fthings-to-do%3Fg2lb%3D2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4344615%2C4371335%2C4401769%2C4419364%2C4428793%2C4433754%2C4447566%2C4452530%2C4458303%2C4270859%2C4284970%2C4291517%2C4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D%2Fm%2F03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0%26authuser%3D&amp;Email=gnctech1%40gmail.com" target="_blank" rel="noreferrer">
+                            Sign in
+                        </a>
+                        <button class="gb_Wb gb_0b gb_Xb" aria-hidden="true" aria-label="Remove" role="button">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+                <div class="gb_Qb gb_Ob" tabindex="0" role="group" aria-haspopup="true" aria-expanded="false">
+                    <img class="gb_3b gb_jb" src="https://lh3.googleusercontent.com/-flh6epgQ4OM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucm3Hhxx9TK2LTljm11B3D9QZUXyiQ/s48-c/photo.jpg" alt="" aria-hidden="true" data-iml="656410.5049999999">
+                    <div class="gb_Tb">
+                        <div class="gb_9b">
+                            Signed out
+                        </div>
+                        <div class="gb_5b">
+                            Junggeun Lee
+                        </div>
+                        <div class="gb_7b gb_8b" dir="ltr">
+                            diaskoreacs@gmail.com
+                        </div>
+                        <div class="gb_Db" aria-hidden="true">
+                            <svg class="gb_Eb" focusable="false" height="20" viewBox="0 0 20 20" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0h20v20H0V0z" fill="none"></path>
+                                <path d="M6.18 7L10 10.82 13.82 7 15 8.17l-5 5-5-5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gb_ac">
+                        <a class="gb_Wb gb_Zb gb_Xb" aria-hidden="true" aria-label="Sign in" role="link" href="https://accounts.google.com/AccountChooser?source=ogb&amp;continue=https%3A%2F%2Fwww.google.com%2Ftravel%2Fthings-to-do%3Fg2lb%3D2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4344615%2C4371335%2C4401769%2C4419364%2C4428793%2C4433754%2C4447566%2C4452530%2C4458303%2C4270859%2C4284970%2C4291517%2C4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D%2Fm%2F03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0%26authuser%3D&amp;Email=diaskoreacs%40gmail.com" target="_blank" rel="noreferrer">
+                            Sign in
+                        </a>
+                        <button class="gb_Wb gb_0b gb_Xb" aria-hidden="true" aria-label="Remove" role="button">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+                <div class="gb_Qb gb_Ob" tabindex="0" role="group" aria-haspopup="true" aria-expanded="false">
+                    <img class="gb_3b gb_jb" src="https://lh3.googleusercontent.com/-RVTOj1gcku8/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnpMH4JkRKQSBlrWR62cld11l9S2w/s48-c/photo.jpg" alt="" aria-hidden="true" data-iml="656410.5799999997">
+                    <div class="gb_Tb">
+                        <div class="gb_9b">
+                            Signed out
+                        </div>
+                        <div class="gb_5b">
+                            JK Y
+                        </div>
+                        <div class="gb_7b gb_8b" dir="ltr">
+                            2joongkeun@gmail.com
+                        </div>
+                        <div class="gb_Db" aria-hidden="true">
+                            <svg class="gb_Eb" focusable="false" height="20" viewBox="0 0 20 20" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0h20v20H0V0z" fill="none"></path>
+                                <path d="M6.18 7L10 10.82 13.82 7 15 8.17l-5 5-5-5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gb_ac">
+                        <a class="gb_Wb gb_Zb gb_Xb" aria-hidden="true" aria-label="Sign in" role="link" href="https://accounts.google.com/AccountChooser?source=ogb&amp;continue=https%3A%2F%2Fwww.google.com%2Ftravel%2Fthings-to-do%3Fg2lb%3D2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4344615%2C4371335%2C4401769%2C4419364%2C4428793%2C4433754%2C4447566%2C4452530%2C4458303%2C4270859%2C4284970%2C4291517%2C4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D%2Fm%2F03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0%26authuser%3D&amp;Email=2joongkeun%40gmail.com" target="_blank" rel="noreferrer">
+                            Sign in
+                        </a>
+                        <button class="gb_Wb gb_0b gb_Xb" aria-hidden="true" aria-label="Remove" role="button">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+                <div class="gb_Qb gb_Ob" tabindex="0" role="group" aria-haspopup="true" aria-expanded="false">
+                    <img class="gb_3b gb_jb" src="https://lh3.googleusercontent.com/-YoW8mvXN4_w/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmEnuWW_o-DDVwC6ABaVTtYeGHyiQ/s48-c/photo.jpg" alt="" aria-hidden="true" data-iml="656410.6300000004">
+                    <div class="gb_Tb">
+                        <div class="gb_9b">
+                            Signed out
+                        </div>
+                        <div class="gb_5b">
+                            Junggeun Lee
+                        </div>
+                        <div class="gb_7b gb_8b" dir="ltr">
+                            likessonsal@gmail.com
+                        </div>
+                        <div class="gb_Db" aria-hidden="true">
+                            <svg class="gb_Eb" focusable="false" height="20" viewBox="0 0 20 20" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0h20v20H0V0z" fill="none"></path>
+                                <path d="M6.18 7L10 10.82 13.82 7 15 8.17l-5 5-5-5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gb_ac">
+                        <a class="gb_Wb gb_Zb gb_Xb" aria-hidden="true" aria-label="Sign in" role="link" href="https://accounts.google.com/AccountChooser?source=ogb&amp;continue=https%3A%2F%2Fwww.google.com%2Ftravel%2Fthings-to-do%3Fg2lb%3D2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4344615%2C4371335%2C4401769%2C4419364%2C4428793%2C4433754%2C4447566%2C4452530%2C4458303%2C4270859%2C4284970%2C4291517%2C4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D%2Fm%2F03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0%26authuser%3D&amp;Email=likessonsal%40gmail.com" target="_blank" rel="noreferrer">
+                            Sign in
+                        </a>
+                        <button class="gb_Wb gb_0b gb_Xb" aria-hidden="true" aria-label="Remove" role="button">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="gb_Db" aria-hidden="true">
+                <svg class="gb_Eb" focusable="false" height="20" viewBox="0 0 20 20" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M0 0h20v20H0V0z" fill="none"></path>
+                    <path d="M6.18 7L10 10.82 13.82 7 15 8.17l-5 5-5-5z"></path>
+                </svg>
+            </div>
+            <a class="gb_bc gb_Fa gb_Ub" href="https://myaccount.google.com/brandaccounts?authuser=0&amp;continue=https://www.google.com/travel/things-to-do%3Fg2lb%3D2502548,4258168,4270442,4271060,4306835,4317915,4322823,4328159,4344615,4371335,4401769,4419364,4428793,4433754,4447566,4452530,4458303,4270859,4284970,4291517,4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D/m/03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0&amp;service=/travel/things-to-do%3Fg2lb%3D2502548,4258168,4270442,4271060,4306835,4317915,4322823,4328159,4344615,4371335,4401769,4419364,4428793,4433754,4447566,4452530,4458303,4270859,4284970,4291517,4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D/m/03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0%26authuser%3D%24authuser" aria-hidden="true">
+                <div class="gb_cc">
+                    <svg focusable="false" height="20" viewBox="0 0 24 24" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 2v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5zm7-6c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z" fill="#5F6368"></path>
+                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    </svg>
+                </div>
+                <div class="gb_ec gb_fc">
+                    All Brand accounts
+                </div>
+                <svg class="gb_gc" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#5F6368"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="gb_Vb" tabindex="-1">
+            <a class="gb_Ab gb_ag" href="https://accounts.google.com/AddSession?service=searchandassistant&amp;continue=https://www.google.com/travel/things-to-do?g2lb%3D2502548,4258168,4270442,4271060,4306835,4317915,4322823,4328159,4344615,4371335,4401769,4419364,4428793,4433754,4447566,4452530,4458303,4270859,4284970,4291517,4412693%26hl%3Den-KR%26gl%3Dkr%26un%3D1%26dest_mid%3D/m/03v6t7%26dest_state_type%3Dmain%26dest_src%3Dts%26sa%3DX%26ved%3D2ahUKEwjikO_Mot_sAhVXPnAKHXI_CjkQuL0BMAB6BAgSEC0&amp;hl=en-KR" target="_blank">
+                <div class="gb_Bb">
+                    <svg class="gb_Cb" enable-background="new 0 0 24 24" focusable="false" height="20" viewBox="0 0 24 24" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1zm3-4v-3h-3V9h3V6h2v3h3v2h-3v3h-2z"></path>
+                    </svg>
+                </div>
+                <div class="gb_Fb">
+                    Add another account
+                </div>
+            </a>
+        </div>
+        <div class="gb_bg gb_Hb">
+            <a class="gb_Ib gb_fg gb_ng gb_2e gb_8c" id="gb_71" href="https://accounts.google.com/Logout?hl=en-KR" target="_top">
+                Sign out
+            </a>
+        </div>
+        <div class="gb_cg gb_xb">
+            <a class="gb_yb gb_Mb" href="https://policies.google.com/privacy?hl=en-GB" target="_blank">
+                Privacy Policy
+            </a>
+            <span class="gb_Ta" aria-hidden="true">•</span>
+            <a class="gb_yb gb_Lb" href="https://myaccount.google.com/termsofservice?hl=en-GB" target="_blank">
+                Terms of Service
+            </a>
+        </div>
+        <div class="gb_6d gb_fe"></div>
+    </div> -->
+</header>
+<div>                       
+        <!-- 지도 프레임 -->
+        <div id="mp_wp">
+            <!-- <div> -->
+                <div id="map">
+                    <!-- 지도정보 표시 부분-->map information
+                </div>
+            <!-- </div> -->
+        </div>
+    <!-- </div> -->
+</div>
+<div>
+    <div></div>
+</div>
+<div class="under-bar">
+    <a href="#">
+    서울특별시
+    </a>
+    <span>
+        <i class="fas fa-chevron-right"></i>
+    </span>
+    <a href="#">
+    추천일정
+    </a>
+    <span>
+        <i class="fas fa-chevron-right"></i>
+    </span>
+    "1일 일정"
+</div>
+    <script>
+        let map;
+    
+        function initMap() {
+    
+            var styleArray = [
+                {
+                    featureType: 'all',
+                    stylers:[
+                        {saturation: -80}
+                    ]
+                },
+                {
+                    featureType: 'foad.arterial',
+                    elementType: 'gemetry',
+                    stylers:[
+                        {hue: '#00ffee'},
+                        {saturation: -50}
+                    ]
+                },
+                {
+                    featureType: 'poi.business',
+                    elementType: 'labels',
+                    stylers:[
+                        {visibility: 'off'}
+                    ]
+                }
+            ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: new google.maps.LatLng(37.580144, 126.977041),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {  
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+            infowindow.setContent(locations[i].place);
+            infowindow.open(map, marker);
+            }
+        })(marker, i));
+        }
+
+        }
+
+        const locations = [
+        { pln: '명동성당', lat: 37.563390, lng: 126.987425 },
+        { pln: '남산N타워',lat: 37.551442, lng: 126.988162 },
+        { pln: '경복궁',lat: 37.579983, lng: 126.977073 },
+        { pln: '종묘',lat: 37.575341, lng: 126.994196 },
+        { pln: '남대문',lat: 37.563381, lng: 126.987339 },
+        { pln: '청계천',lat: 37.569246, lng: 126.978691 },
+        { pln: '강남역',lat: 37.498146, lng: 127.027680 },
+        { pln: '롯데월드',lat: 37.511450, lng: 127.098269 },
+        { pln: '북촌한옥마을',lat: 37.582569, lng: 126.983621 },
+        { pln: '인사동쌈지길', lat: 37.574471, lng: 126.984956 },
+        { pln: '봉은사', lat: 37.515014, lng: 127.057312 },
+        { pln: '서구청', lat: 37.545781, lng: 126.675844 },
+        ];
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqxghuqNb8gdkUV2yupr6PLdcvOEG_k&callback=initMap"></script>
+
+
+</body>
+</html>
