@@ -9,18 +9,113 @@
 <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="./js/main.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
+
 </head>
 <style>
   /* 구글 지도 */
 #mp_wp {
     top:10%;
-    left:35%;
-    width:  65%;
+    left:20%;
+    width:85%;
     height: 100%;
     position: fixed;
     /* visibility: hidden; */
 }
+#map {
+    left:15%;
+    width: 85% ;
+    height: 100%;   
+    position: fixed;
+}
+.under-bar{
+   position: absolute;
+   top:70px;
+   left:30px;
+   font-size:14px;
+   padding:0 0 6 20px;
+}
+.under-bar span{
+    padding:0 4px;
+    color:#70757a;
+}
+.under-bar a{
+    color: #1a73e8;
+}
+.leftcenter{
+    background-color: #ffffff;
+    position: fixed;
+    top:95px;
+    width: 600px;
+    height: 100%;
+}
+.lc{
+    padding-left: 64px;
+}
+.nb{
+    background-color: #fff;
+    border: 2px solid #1558d6;
+    border-radius: 26px;
+    color: #1558d6;
+    display: block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 25px;
+}
+.l1{
+    padding:40px 16px;
+    padding-left: 15px;
+    height: 200px;
+    position: relative;
+}
+.l1 h3{
+   font-size: 20px;
+   font-weight: normal;
+}
+.lii p {
+    width: 300px;
+}
+.l1 img{
+   position: absolute;
+   left:400px;
+}
+.ll{
+    position: absolute;
+    top: 65px;
+    left:27px;
+    height: 140px;
+    width: 2px;
+   background-color:rgba(0,0,0,.12);
+}
+.bus{
+    font-size: 18px;
+    padding-left: 20px;
+}
+.lii{
+    position: absolute;
+    left:60px;
+}
+.star{
+  display:inline-block;
+  width: 13px;height: 25px;
+  cursor: pointer;
+}
+.star_left{
+  background: url(http://gahyun.wooga.kr/main/img/testImg/star.png) no-repeat 0 0; 
+  background-size: 25px; 
+  margin:-3px;
 
+}
+.star_right{
+  background: url(http://gahyun.wooga.kr/main/img/testImg/star.png) no-repeat -10px 0; 
+  background-size: 25px; 
+  margin: -3px;
+}
+.star.on{
+  background-image: url(http://gahyun.wooga.kr/main/img/testImg/star_on.png);
+
+}
 </style>
 <body>
 <!-- 헤더시작 -->
@@ -449,8 +544,105 @@
     <span>
         <i class="fas fa-chevron-right"></i>
     </span>
-    "1일 일정"
+    1일 일정
 </div>
+<div class="leftcenter">
+    <div class="lc">
+        <div class="l1">
+            <div class="nb">1</div>
+            <div class="ll"></div>
+            <div class="lii">
+                <h3>창덕궁</h3>
+                <div class="star-box">
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  </div>
+                <p>1시간</p>
+                <p>투어를 이용하여 조선 왕조의 궁전과 정원을 구경할수 있습니다</p>
+            </div>
+            <img src="img/changduk.png" width="100px" height="100px">
+        </div>
+        <a class="bus">
+            <i class="fas fa-bus"></i> 버스
+        </a>
+        <div class="l1">
+            <div class="nb">2</div>
+            <div class="ll"></div>
+            <div class="lii">
+                <h3>경복궁</h3>
+                <div class="star-box">
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  </div>
+                <p>55분</p>
+                <p>박물관과 정원이 있는 거대한 14세기 왕궁이며 무료 가이드 투어가 제공됩니다</p>
+            </div>
+            <img src="img/gbg.png" width="100px" height="100px">
+        </div>
+        <a  class="bus">
+            <i class="fas fa-bus"></i> 버스
+        </a>
+        <div class="l1">
+            <div class="nb">3</div>
+            <div class="ll"></div>
+            <div class="lii">
+                <h3>명동</h3>
+                <div class="star-box">
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                    <span class="star star_left"></span>
+                    <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  
+                   <span class="star star_left"></span>
+                   <span class="star star_right"></span>
+                  </div>
+                <p>2.5시간</p>
+                <p>세계적인 고급 매장과 레스토랑이 많아 관광객이 모여드는 번화한 쇼핑 거리입니다</p>
+            </div>
+            <img src="img/myungdong.png" width="100px" height="100px">
+        </div>
+        <a  class="bus">
+            <i class="fas fa-bus"></i> 버스
+        </a>
+        <div>
+            
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>    
     <script>
         let map;
     
