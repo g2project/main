@@ -104,7 +104,6 @@ p{word-wrap:break-word}
 #sb {
     width: 100px;
     height: 500px;
-    border: 1px solid red;
     text-align: center;
     position: fixed;
     display: inline-block;
