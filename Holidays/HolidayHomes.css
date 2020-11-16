@@ -1,138 +1,13 @@
-/* 초기화 코드 initialization code */
-@charset "utf-8";
-
-body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
-body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
-a{color:#2d374b;text-decoration:none} 
-a:hover{color:#cd0200;text-decoration:none} 
-em{font-style:normal} 
-li{list-style:none} 
-img{border:0;vertical-align:middle} 
-table{border-collapse:collapse;border-spacing:0} 
-p{word-wrap:break-word}
-* {box-sizing: border-box;}
-* { outline: none;}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* 헤더 */
-#header {
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    background-color: #fff;
-    padding-top: 12px;
-    top: 0;
-    z-index: 9999;
-}
-
-#header > div {
-    vertical-align: middle;
-}
-
-.hd_b1 {
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.hd_b2 {
-    display: inline-block;
-    float: right;
-    margin-right: 20px;
-}
-
-.hd_b1 > div {
-    vertical-align: middle;
-}
-
-.hd_b2 > div {
-    vertical-align: middle;
-}
-
-.hd_c1, .hd_c2 {
-    display: inline-block;
-}
-
-.hd_c2 {
-    margin-left: 20px;
-}
-
-.hd_c1 svg {
-    width: 24px;
-    height: 24px;
-}
-
-.hd_c2 p {
-    font-size: 23px;
-    font-weight: bold;
-}
-
-.hd_c3, .hd_c4 {
-    display: inline-block;
-}
-
-.hd_c3 {
-    margin-right: 20px;
-}
-
-.hd_c3 svg {
-    width: 24px;
-    height: 24px;
-}
-
-.hd_c4 img {
-    border-radius: 50px;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
-#sb, #center, #mp_wp {
-    margin-top: 60px;
-    padding-top: 5px;
-}
-
+/* 센터 폭 새로 조정 */
 #sb {
-    width: 100px;
-    height: 500px;
-    /* border: 1px solid red; */
-    text-align: center;
-    position: fixed;
-    display: inline-block;
-    background-color: #fff;;
+    /* border: 1px solid red;  */
 }
 
 #center {
-    width: calc(59% - 20px);
-    /* border: 1px solid red; */
-    margin-left: 100px;
-    display: inline-block;
-    padding-left: 50px;
-    overflow: hidden;
+    /* border: 1px solid red;  */
+    padding-left: 10px;
 }
-
-#mp_wp {
-    width: calc(100% - 70px - 60%);
-    height: calc(100% - 60px);
-    padding: 20px;
-    /* border: 1px solid red; */
-    display: absolute;
-    right: 0;
-    top: 0;
-    position: fixed;
-    /* visibility: hidden; */
-}
-/* ------------------------------------ */
+/* --------------------------- */
 
 
 
@@ -140,592 +15,463 @@ p{word-wrap:break-word}
 
 
 
-/* 사이드바 */
-#sb > nav > div {
-    margin-bottom: 35px;
-}
-
-.sb_it {
-    text-align: center;
-}
-
-.sb_it svg{
-    width: 24px;
-    height: 24px;
-}
-
-.sb_it button {
-    background-color: #fff;
-    border: none;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* 센터 검색창, 세이브드*/
-.ct_ss {
-    width: 100%;
-    height: 60px;
-    overflow: hidden;
-    /* border: 1px solid green; */
-    margin-bottom: 20px;
-}
-
-.ct_dv {
-    display: inline-block;
-}
-
-.ct_sc {
-    width: 75%;
-    height: 55px;
-    margin-right: 20px;
-}
-
-.ct_sc input {
-    width: 100%;
-    height: 100%;
-    padding-left: 55px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.ct_pn {
-    position: absolute;
-    left: 170px;
-    top: 83px;
-}
-
-.ct_sv svg {
-    width: 24px;
-    height: 24px;
-}
-
-.ct_sv button {
-    width: 120px;
-    height: 45px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 50px;
-    font-size: 14px;
-}
-
-.ct_dv svg {
-    vertical-align: middle;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* 센터 검색창 아래 배너*/
-.ct_bn {
-    width: 100%;
-    height: 180px;
-    position: relative;
-}
-
-.ct_bn img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    /* object-position: 50% 50%; */
-    border-radius: 8px;
-}
-
-.ct_bn span {
-    position: absolute;
-    left: 20px;
-    bottom: 15%;
-    z-index: 1;
-}
-
-.ct_bn h1 {
-    font-weight: 500;
-    font-size: 52px;
-    color: #fff; 
-}
-
-.ct_bn p {
-    font-size: 14px;
-    color: #fff;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* 센터 배너 아래 Top sights */
-.ct_p1 {
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid red; */
-    padding-top: 30px;
-}
-
-.ct_p1 h1 {
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 1.5em;
-}
-
-.ct_p1 h5 {
-    font-weight: normal;
-    color: #666;
-    font-size: 12px;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* Top sights 상품 */
-.ts_wp {
+/* 센터 첫줄: 지역, 날짜, 명수 선택 */
+.tp_wp {
     margin-bottom: 30px;
     /* border: 1px solid blue; */
 }
 
-.ts_wp > div:nth-child(3n) {
-    margin-right: 0;
-}
-
-.ts_pt {
-    width: calc((100% - 34px)/3);
-    height: calc(200px + 4vw);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 13px;
-    display: inline-block;
+.tp_fr {
     position: relative;
-    margin-bottom: 15px;
+    display: inline-block;
     vertical-align: top;
 }
 
-.pt_im {
-    width: 100%;
-    height: 9vw;
-    border: 1px solid green;
+.tp_sr {
+    width: 220px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 1px 5px 1px 10px;
+    margin: 0 10px 0 0;
+    border: 1px solid #ccc;
 }
 
-.pt_im img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px 5px 0 0;
-    object-fit: cover;
+.sr_it {
+    display: inline-block;
+    line-height: 4em;
 }
 
-.pt_dt {
-    width: 100%;
-    padding: 15px 10px 0 10px;
+.tp_sr input {
+    border: none;
+    padding: 10px 0;
 }
 
-.pt_tt {
-    font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 10px;
+.tp_dt {
+    padding: 2px 0;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
 }
 
-.pt_rt {
-    font-weight: normal;
-    font-size: 12px;
-    margin-bottom: 10px;
+.tp_dt > div > div {
+    position: relative;
+    display: inline-block;
 }
 
-.pt_rt div {
-    display: inline;
+.tp_dt button {
+    height: 44px;
+    border-radius: 7px;
+    background: #fff;
+    border: none;
+}
+
+.dt_d1~button {
+    width: 130px;
+}
+
+.dt_d2~button {
+    width: 90px;
+}
+
+.dt_dt {
+    font-size: 14px;
+    line-height: 3.0em;
+    position: absolute;
+}
+
+.dt_ci {
+    left: 12px;
+    top: 8px;
+}
+
+.dt_d1 {
+    left: 50px;
+}
+
+.dt_d2 {
+    left: 10px;
+}
+
+.dt_br {
+    height: 32px;
+    top: -7px;
+    border: 1px solid #ccc;
+}
+
+.tp_nb {
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 1px 5px 1px 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.nb_i1 {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    line-height: 3.0em;
+}
+
+.nb_sp {
+    font-size: 14px;
+    position: absolute;
+    left: 44px;
+    line-height: 3.0em;
+}
+
+.nb_dn {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+}
+/* --------------------------- */
+
+
+
+
+
+
+
+/* 센터 둘째줄: hotels, holiday homes, 
+rating, amenities, rooms, .md_hr */
+.sl_it {
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.sl_gr {
     font-size: 0;
 }
 
-.pt_rt div span {
-    font-size: 16px;
-    padding: 0;
-    margin-right: -5px;
-}
-
-.pt_sf {
-    color: #fbbc04;
-}
-
-.pt_rt div+span {
-    margin-left: 10px;
-}
-
-.pt_ap {
-    font-weight: normal;
-    font-size: 12px;
-}
-
-.pt_sv {
-    width: 34px;
-    height: 34px;
-    padding-top: 7px;
-    border-radius: 50%;
-    text-align: center;
-    right: 10px;
-    top: 10px;
-    position: absolute;
-    background: rgba(48, 48, 48, 0.6);
-}
-
-.pt_sv svg {
-    fill: #fff;
-    width: 20px;
-    height: 20px;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* See all top sights */
-.sa_ts {
-    text-align: center;
-}
-
-.sa_ts button {
-    width: 330px;
-    height: 35px;
-    border: 1px solid #1e90ff;
-    background-color: #fff;
-    border-radius: 30px;
-}
-
-.sa_ts button > * {
-    vertical-align: middle;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* Top sights by interest 제목 */
-.ti_wp {
-    width: 5500px;
-    margin-bottom: 80px;
-    /* border: 1px solid green; */
-}
-
-.ti_pd {
-    position: relative;
-}
-
-.ti_it {
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid red; */
-    padding-top: 50px;
-}
-
-.ti_it h2 {
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 1.5em;
-}
-
-.ti_rr {
-    top: 30px !important ;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* Top sights by interest 상품정보 */
-.ti_pt {
-    width: 115px;
-    height: 115px;
-    /* border: 1px solid #ccc; */
-    /* border-radius: 10px; */
-    margin-right: 0;
-    display: inline-block;
-    position: relative;
-}
-
-.ti_pt img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.ti_dt {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    left: 15px;
-    bottom: 15px;
-    position: absolute;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* Popular food and drink */
-.pf_cn {
-    /* border: 1px solid green; */
-    width: calc(5*1100px);
-    margin-bottom: 80px;
-    position: relative;
-}
-
-.pf_tt h2 {
-    font-weight: normal;
-    font-size: 22px;
-}
-
-.pf_tt h3 {
-    font-weight: normal;
-    font-size: 12px;
-}
-
-.pf_tt {
-    margin-bottom: 20px;
-}
-
-.pf_wp {
-    width: 114px;
-    margin-right: 5px;
-    display: inline-block;
-    height: 207px;
-    border: 1px solid #999;
-    border-radius: 8px;
-    vertical-align: top;
-}
-
-.pf_fr {
-    width: 100%;
-    height: 113px;
-    margin-bottom: 10px;
-}
-
-.pf_fr img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
-}
-
-.pf_dt {
-    font-weight: normal;
+.sl_ht {
     font-size: 14px;
     text-align: center;
-}
-
-.pf_ak {
-    top: 155px;
-    left: -20px;
-    position: absolute;
-    
-}
-
-.pf_ak button {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #fff;
+    line-height: 2.8em;
+    width: 80px;
+    border-radius: 7px 0 0 7px;
     border: 1px solid #ccc;
 }
 
-.pf_rt {
-    left: calc(5px + 46vw);
+.sl_hh {
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.8em;
+    width: 120px;
+    border-radius: 0 7px 7px 0;
+    border: 1px solid #ccc;
 }
 
-.pf_ak svg {
-    padding-top: 3px;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* Suggested day plans */
-.sg_dp {
-    /* border: 1px solid green; */
-    width: 5500px;
-    margin-bottom: 50px;
+.sl_rn {
+    display: inline-block;
     position: relative;
+    margin-right: 10px;
 }
 
-.sg_bt h2 {
-    font-weight: normal;
-    font-size: 22px;
+.sl_rn button {
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 40px;
 }
 
-.sg_st a {
-    font-weight: normal;
-    font-size: 12px;
+.sl_rt button {
+    width: 100px;
 }
 
-.sg_tt {
-    margin-bottom: 10px;
+.sl_am button {
+    width: 120px;
 }
 
-.sg_it {
+.sl_rm button {
+    width: 100px;
+}
+
+.sl_ct button span {
+    margin-left: -10px;
+}
+
+.nb_dq {
+    top: 13px;
+}
+
+.sl_wp {
+    margin-bottom: 16px;
+    /* border: 1px solid red; */
+}
+
+.md_hr {
+    width: 100%;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+/* --------------------------- */
+
+
+
+
+
+
+
+/* 상품 */
+.pt_wp {
     /* border: 1px solid blue; */
-    width: 230px;
-    height: 300px;
-    border-radius: 8px;
-    margin-right: 5px;
-    vertical-align: top;
-    position: relative;
-    overflow: hidden;
+}
+
+.tl_wp {
+    height: 40px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+.tl_or  {
     display: inline-block;
 }
 
-.sg_mp img {
-    border-radius: 8px 0 0 0;
-    margin-bottom: 3px;
+.tl_hu {
+    line-height: 2.5em;
+    font-weight: 500;
+    font-size: 15px;
+    /* border: 1px solid red; */
 }
 
-.sg_mr {
-    right: -4px;
-    top: 0;
-    position: absolute;
+.tl_bm {
+    float: right;
+    width: 180px;
+    height: 35px;
+    position: relative;
+    color: #1967d2;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 20px;
+    border-radius: 30px;
+    line-height: 2.5em;
+    background-color: #e8f0fe;
 }
 
-.sg_sg {
-    margin-bottom: 13px;
+.tl_dn {
+    right: 15px;
 }
 
-.sg_mr img {
-    border-radius: 0 8px 0 0;
+.pt_fr {
+    width: 99%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 20px;
 }
 
-.sg_sc {
-    margin-left: 10px;
+.pt_in {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    /* border: 1px solid blue; */
 }
 
-.sg_tt {
-    font-weight: normal;
+.pt_da {
+    padding: 20px;
+    width: calc(100% - 290px - 20px);
+}
+
+.pt_l1 {
+    font-weight: 400;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+.pt_l2 {
+    margin-bottom: 30px;
+}
+
+.pt_hd {
+    display: none;
+}
+
+.pt_pr {
+    font-weight: 500;
     font-size: 16px;
 }
 
-.sg_dt {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.5em;
-    margin-bottom: 10px;
-}
-
-.sg_dt svg {
-    width: 16px;
-    height: 16px;
-    fill: #666;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.trunc {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
-.sg_rr {
-    top: 170px;
-}
-/* ------------------------------------ */
-
-
-
-
-
-
-
-/* footer */
-.ft_wp {
-    text-align: center;
-    margin: 20px 0 30px 0;
-    /* border: 1px solid green; */
-    font-weight: normal;
+.pt_fc span {
+    margin-right: 20px;
     font-size: 14px;
 }
 
-.ft_lf a, .ft_lf span{
-    color: #1e90ff;
+.pt_bz {
+    display: inline-block;
+}
+
+.pt_zz {
+    float: right;
+}
+
+.pt_zx {
+    margin-top: 10px;
+}
+
+.pt_zx img {
+    display: none;
+}
+
+.pt_zz button {
+    background-color: #1a73e8;
+    border: none;
+    width: 120px;
+    height: 36px;
+    font-weight: 700px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.pt_io {
+    width: 290px;
+    height: 198px;
+    border-radius: 7px 0 0 7px;
+    float: left;
+    overflow: hidden;
+}
+
+.pt_ip {
+    width: 5500px;
+    height: 198px;
+    font-size: 0;
+}
+
+.pt_ip img {
+    width: 290px;
+    height: 198px;
+    border-radius: 7px 0 0 7px;
+    object-fit: cover;
+}
+/* --------------------------- */
+
+
+
+
+
+
+
+/* Box-shadow */
+.bx_hv {
+    transition: box-shadow .1s;
+}
+
+.bx_hv:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(33, 3, 33, .2);
+}
+
+.bx_ts {
+    transition: box-shadow .1s;
+}
+
+.bx_ts:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(20, 20, 20, 0.2);
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* bottom line */
+.bt_nt {
+    width: 100px;
+    height: 36px;
+    position: relative;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #1a73e8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bt_tx {
+    line-height: 2.5em;
+} 
+
+.bt_rb {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.md_bh {
+    margin-bottom: 40px;
+}
+
+.bt_cc {
+    text-align: center;
+    position: relative;
+}
+
+.bt_cc button{
+    width: 200px;
+    height: 36px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.bt_cc button > span > span:nth-child(3) {
+    font-weight: 600;
+}
+
+.bt_da {
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+.bt_if {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+.bt_if > div {
+    margin-bottom: 10px;
+}
+
+.bt_bf {
+    font-weight: 600;
+}
+
+.if_ah {
+    color: #1a73e8;
+}
+
+.bt_lk div {
+    display: inline-block;
     margin-right: 15px;
+    color: #1a73e8;
+    /* border: 1px solid red; */
 }
 
-.ft_lf  {
-   margin-bottom: 10px; 
+.bt_lk a {
+    color: #1a73e8;
 }
-/* ------------------------------------ */
 
-
-
-
-
-
-
-/* map */
-#map {
-    width: 100%;
-    height: 100%;
+.bt_mr {
+    /* border: 1px solid red; */
 }
-/* ------------------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
