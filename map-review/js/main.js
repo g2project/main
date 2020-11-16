@@ -10,4 +10,11 @@ $(function(){
             $asideButton.stop(true).animate({left: '-10px'}, 300, 'easeInBack')      //stop옆의 (true):없어도 동일한 효과
         }
     }); 
+    $(".star").on('click',function(){
+        var idx = $(this).index();
+        $(".star").removeClass("on");
+          for(var i=0; i<=idx; i++){
+             $(".star").eq(i).addClass("on");
+        }
+      });
 });
