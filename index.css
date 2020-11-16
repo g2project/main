@@ -198,6 +198,7 @@ p{word-wrap:break-word}
 
 .ct_dv {
     display: inline-block;
+    cursor: pointer;
 }
 
 .ct_sc {
