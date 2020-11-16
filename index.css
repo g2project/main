@@ -233,6 +233,9 @@ p{word-wrap:break-word}
     background-color: #fff;
     border-radius: 50px;
     font-size: 14px;
+}
+
+.ct_at {
     cursor: pointer;
 }
 
