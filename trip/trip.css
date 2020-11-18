@@ -155,10 +155,10 @@ p{word-wrap:break-word}
     position: relative;
     margin: 0 auto;
     border: 1px solid #c8c8c8;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: #fff;
-    width: 350px;
-    height: 65px;
+    width: 400px;
+    height: 60px;
     box-shadow: 3px 3px 5px #c8c8c8;
 }
 
@@ -209,18 +209,19 @@ p{word-wrap:break-word}
     border: 1px solid #fff;
     width: 55%;
     height: 1100px;
-    left: 22%;
+    left: 23%;
 }
 
 .t_c1 {
     margin-top: 40px;
     margin-left: 40px;
+    margin-bottom: -15px;
+    line-height: 2.7em;
 }
 
 .t_c2 {
     width: 93%;
     margin: 25px;
-    /* height: 450px; */
 }
 
 .tc_img{
@@ -304,7 +305,7 @@ p{word-wrap:break-word}
     border-radius: 8px;
     width: 50%;
     margin-top: -20px;
-    margin-left: 450px;
+    margin-left: 469px;
 }
 
 .travelpage > img {
@@ -328,7 +329,7 @@ p{word-wrap:break-word}
     border-bottom: 1px solid #c8c8c8;
     width: 55%;
     height: 550px;
-    left: 22%;
+    left: 23%;
     margin-bottom: -20px;
 }
 
