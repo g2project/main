@@ -8,161 +8,9 @@
 <script src="./js/vendor/jquery-1.10.2.min.js"></script>
 <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="./js/main.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <style>
-
-button {
-    outline: none;
-}
-
-::selection {       /*어떤 대상이 선택되어질때-오픈버튼*/
-    background-color: #fff;
-    text-shadow: none;
-}
-
-.page-main {
-    position: relative;
-}
-   /* 사이드페이지 */
-.page-main > aside {
-    background-color: #fff;
-    width: 410px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -410px;
-    overflow: auto;
-}
-aside::-webkit-scrollbar {
-    width: 6px;
-  }
-aside::-webkit-scrollbar-thumb {
-    background-color: #888;
-  }
-aside::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-  }
-
-
-
- /* 버튼 */
-.page-main > button {
-    background-color: #fff;
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    width: 30px;
-    height: 50px;
-    margin: 0;
-    border: none;
-    color:#888;
-}
-
-  /* 구글 지도 */
-#map {
-    width: 100% ;
-    height: 100%;
-   
-}
-#mp_wp {
-    width:  100%;
-    height: 100%;
-    position: fixed;
-    z-index: -99;
-    /* visibility: hidden; */
-}
-   
-
-
-.ct_dv {
-    display: inline-block;
-}
-
-.ct_sc input {
-    width: 85%;
-    height: 45px;
-    padding-left: 45px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    z-index: 1;
-    position: absolute;
-    top:7px;
-    left:5px;
- 
-}
-#img01{
-    width: 100%;
-    position: relative;
-    padding:0px;
-}
-.info_head{
-   
-   padding-left: 15px;
-}
-#head_nm{
-    font-size: 1.375rem;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.75rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-#head_sdnm{
-    font-size: inherit;
-    font-weight: lighter;
-    margin-top:7px;
-    margin-bottom: 7px;
-}
-.head_n,.head_nb{
-    font-weight: lighter;
-    font-size:12px;
-    color:rgb(105, 104, 104);
-}
-.head_n{
-    color:inherit
-}
-
-.block2 div{
-  
-    font-size:0.75em;
-}
-.block2 > button {
-    width: 36px;
-    padding:8px;
-    margin:6px;
-    -webkit-filter: opacity(.5) drop-shadow(0 0 0 #1A73E8);
-   filter: opacity(.5) drop-shadow(0 0 0 #1A73E8);
-}
-.block2 img{
-    -webkit-filter: opacity(.5) drop-shadow(0 0 0 #1A73E8);
-   filter: opacity(.5) drop-shadow(0 0 0 #1A73E8);
-}
-.b1 div , .c1 div{
-   margin: 10px;
-   display: flex;
-}
-
-.d2{
-    display: flex;
-    padding:5px;
-    margin:10px;
-}
-.d3{
-    margin-top: 20px;
-    margin-left: 35%;
-    margin-bottom: 20px;
-}
-.b2b1{
-    display:inline-flex;
-    flex-direction: row;
-    text-align: center;
-    width: 50px;
-    
-
-}
-
 </style>
 <body>
 
@@ -195,41 +43,41 @@ aside::-webkit-scrollbar-track {
             </div>
             <hr>
             <div style="padding: 10px 22px;" class="block2">
-                <div class="b2b1">
+                <div>
                   <div>
-                    <div style=" display:block;" >
+                    <div class="b2b1" style=" display:block;" >
                         <button aria-label="경로" ><img alt="경로" src="img/gyungro.png" draggable="false" jstcache="231" src="" ><span style="display:none"></span></button>
                         <div aria-hidden="true"style="font-family: Roboto, &quot;Noto Sans KR&quot;, Arial, sans-serif;">경로</div>
                     </div>
                   </div>
                 </div>
-                <div class="b2b1">
+                <div>
                   <div>
-                    <div style=" display: block; ">
+                    <div class="b2b1" style=" display: block; ">
                         <button aria-label="저장" ><img alt="저장" src="img/book.png" draggable="false" src=""><span  style="display:none"></span></button>
                         <div aria-hidden="true"  style="font-family: Roboto, &quot;Noto Sans KR&quot;, Arial, sans-serif;">저장</div>                 
                     </div>
                   </div> 
                 </div>
-                <div class="b2b1">
+                <div>
                   <div>
-                    <div style=" display:block; ">
+                    <div class="b2b1" style=" display:block; ">
                         <button aria-label="주변" ><img alt="주변" src="img/place.png" draggable="false"  src="" ><span style="display:none"></span></button>
                         <div aria-hidden="true"style="font-family: Roboto, &quot;Noto Sans KR&quot;, Arial, sans-serif;">주변</div>                       
                     </div>
                   </div> 
                 </div>
-                <div class="b2b1">
+                <div>
                   <div>
-                    <div style=" display: block; ">
+                    <div class="b2b1" style=" display: block; ">
                         <button aria-label="휴대전화로 보내기"> <img alt="휴대전화로 보내기" src="img/mobile.png" draggable="false" src=""><span style="display:none"></span></button>
                         <div aria-hidden="true" style="font-family: Roboto, &quot;Noto Sans KR&quot;, Arial, sans-serif;">휴대전화로 보내기</div>                        
                     </div>
                   </div>  
                 </div>
-                <div class="b2b1">
+                <div>
                    <div>
-                    <div style=" display:block; ">
+                    <div class="b2b1" style=" display:block; ">
                         <button aria-label="공유"><img alt="공유" src="img/share.png" draggable="false"  src=""><span style="display:none"></span></button>
                         <div aria-hidden="true" style="font-family: Roboto, &quot;Noto Sans KR&quot;, Arial, sans-serif;">공유</div>                        
                     </div>
@@ -250,7 +98,7 @@ aside::-webkit-scrollbar-track {
                 </div>
                 <div>
                     <div>
-                        <img src="#">
+                        <img src="img/place.png">
                     </div>
                     <div> 
                     <span>
