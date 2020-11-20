@@ -538,78 +538,106 @@
         </div>
     </div>
 </div>    
-    <script>
-        let map;
-    
-        function initMap() {
-    
-            var styleArray = [
-                {
-                    featureType: 'all',
-                    stylers:[
-                        {saturation: -80}
-                    ]
-                },
-                {
-                    featureType: 'foad.arterial',
-                    elementType: 'gemetry',
-                    stylers:[
-                        {hue: '#00ffee'},
-                        {saturation: -50}
-                    ]
-                },
-                {
-                    featureType: 'poi.business',
-                    elementType: 'labels',
-                    stylers:[
-                        {visibility: 'off'}
-                    ]
-                }
-            ];
+<script>
+    let map;
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: new google.maps.LatLng(37.580144, 126.977041),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
+    function initMap() {
 
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker, i;
-
-        for (i = 0; i < locations.length; i++) {  
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-            map: map
-        });
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-            infowindow.setContent(locations[i].place);
-            infowindow.open(map, marker);
+        var styleArray = [
+            {
+                featureType: 'all',
+                stylers:[
+                    {saturation: -80}
+                ]
+            },
+            {
+                featureType: 'foad.arterial',
+                elementType: 'gemetry',
+                stylers:[
+                    {hue: '#00ffee'},
+                    {saturation: -50}
+                ]
+            },
+            {
+                featureType: 'poi.business',
+                elementType: 'labels',
+                stylers:[
+                    {visibility: 'off'}
+                ]
             }
-        })(marker, i));
-        }
-
-        }
-
-        const locations = [
-        { pln: '명동성당', lat: 37.563390, lng: 126.987425 },
-        { pln: '남산N타워',lat: 37.551442, lng: 126.988162 },
-        { pln: '경복궁',lat: 37.579983, lng: 126.977073 },
-        { pln: '종묘',lat: 37.575341, lng: 126.994196 },
-        { pln: '남대문',lat: 37.563381, lng: 126.987339 },
-        { pln: '청계천',lat: 37.569246, lng: 126.978691 },
-        { pln: '강남역',lat: 37.498146, lng: 127.027680 },
-        { pln: '롯데월드',lat: 37.511450, lng: 127.098269 },
-        { pln: '북촌한옥마을',lat: 37.582569, lng: 126.983621 },
-        { pln: '인사동쌈지길', lat: 37.574471, lng: 126.984956 },
-        { pln: '봉은사', lat: 37.515014, lng: 127.057312 },
-        { pln: '서구청', lat: 37.545781, lng: 126.675844 },
         ];
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqxghuqNb8gdkUV2yupr6PLdcvOEG_k&callback=initMap"></script>
 
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    // center: new google.maps.LatLng( 37.568813, 126.987211)
+    center: new google.maps.LatLng( 36.125141330800446, 128.1302259557192),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
 
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    const labels = "123456789";
+    let labelIndex = 0;
+
+    for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+        label: labels[labelIndex++ % labels.length],
+        map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+        infowindow.setContent(locations[i].place);
+        infowindow.open(map, marker);
+        }
+    })(marker, i));
+    }
+
+    // const flightPlanCoordinates = [
+    //     { lat: 37.772, lng: -122.214 },
+    //     { lat: 21.291, lng: -157.821 },
+    //     { lat: -18.142, lng: 178.431 },
+    //     { lat: -27.467, lng: 153.027 },
+    // ];
+    const flightPath = new google.maps.Polyline({
+        path: flightPlanCoordinates,
+        geodesic: true,
+        strokeColor: "#0099ff",
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+    });
+    flightPath.setMap(map);
+
+    }
+    
+    const locations = [
+    { pln: '서울 명동성당', lat: 37.563390, lng: 126.987425 },
+    { pln: '경주 첨성대',lat: 35.8383669499261, lng: 129.21773909754648 },
+    { pln: '여수 돌산공원',lat: 34.73555332310942, lng: 127.73888323699076 }
+    ];
+
+    const flightPlanCoordinates = [
+    { pln: '서울 명동성당', lat: 37.563390, lng: 126.987425 },
+    { pln: '경주 첨성대',lat: 35.8383669499261, lng: 129.21773909754648 },
+    { pln: '여수 돌산공원',lat: 34.73555332310942, lng: 127.73888323699076 }
+    ];
+
+    // const locations = [
+    // { pln: '명동성당', lat: 37.563390, lng: 126.987425 },
+    // { pln: '남산N타워',lat: 37.551442, lng: 126.988162 },
+    // { pln: '경복궁',lat: 37.579983, lng: 126.977073 },
+    // { pln: '종묘',lat: 37.575341, lng: 126.994196 },
+    // { pln: '남대문',lat: 37.563381, lng: 126.987339 },
+    // { pln: '청계천',lat: 37.569246, lng: 126.978691 },
+    // { pln: '강남역',lat: 37.498146, lng: 127.027680 },
+    // { pln: '롯데월드',lat: 37.511450, lng: 127.098269 },
+    // { pln: '북촌한옥마을',lat: 37.582569, lng: 126.983621 },
+    // { pln: '인사동쌈지길', lat: 37.574471, lng: 126.984956 },
+    // { pln: '봉은사', lat: 37.515014, lng: 127.057312 },
+    // ];
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqxghuqNb8gdkUV2yupr6PLdcvOEG_k&callback=initMap"></script>
 </body>
 </html>
