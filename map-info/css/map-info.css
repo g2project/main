@@ -22,7 +22,7 @@ button {
 ::selection {       /*어떤 대상이 선택되어질때-오픈버튼*/
     background-color: #fff;
     text-shadow: none;
-}
+} 
 
 .page-header {
     background-color: #fff;
