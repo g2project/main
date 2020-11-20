@@ -132,8 +132,9 @@ p{word-wrap:break-word}
 /* 가운데 맨 위 여행 */
 .main {
     position: relative;
-    text-align: center;
+    margin:0 auto;
     padding-top: 130px;
+    width: 80%;
 }
 
 .travel {
