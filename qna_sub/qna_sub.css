@@ -1,0 +1,270 @@
+/* 초기화 코드 initialization code */
+@charset "utf-8";
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+* {box-sizing: border-box;}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 12px;
+    top: 0;
+    z-index: 9999;
+}
+
+#header > div {
+    vertical-align: middle;
+}
+
+.hd_b1 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hd_b2 {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.hd_b1 > div {
+    vertical-align: middle;
+}
+
+.hd_b2 > div {
+    vertical-align: middle;
+}
+
+.hd_c1, .hd_c2 {
+    display: inline-block;
+}
+
+.hd_c2 {
+    margin-left: 20px;
+}
+
+.hd_c1 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c2 p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hd_c3, .hd_c4 {
+    display: inline-block;
+}
+
+.hd_c3 {
+    margin-right: 20px;
+}
+
+.hd_c3 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c4 img {
+    border-radius: 50px;
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
+
+#center {
+    width: 1260px;
+    margin: 0 auto;
+    height: 880px;
+}
+
+.qna_bn {
+    position: relative;
+}
+
+.qna_bn img {
+    width: 1260px;
+}
+
+.qna_bntxt {
+    position: absolute;
+    left: 39%;
+    bottom: 12%;
+}
+
+.qna_bntxt h1{
+    color: #1a73e8;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+
+
+
+
+
+/* 센터 검색창, 세이브드*/
+.ct_ss {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin: 50px 0 20px 0;
+    text-align: center;
+
+}
+
+.ct_dv {
+    display: inline-block;
+    position: relative;
+}
+
+.ct_sc {
+    width: 60%;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.ct_sc i {
+    position: absolute;
+    line-height: 60px;
+    left: 30px;
+    font-size: 15px;
+    color:  #1a73e8;
+}
+
+.ct_sc input {
+    width: 100%;
+    height: 100%;
+    padding-left: 55px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+}
+
+.ct_pn {
+    position: absolute;
+    left: 160px;
+    top: 83px;
+}
+
+.ct_sv svg {
+    width: 24px;
+    height: 24px;
+}
+
+.ct_sv button {
+    width: 120px;
+    height: 45px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+
+/* ------------------------------------ *
+
+
+
+
+
+/* 글쓰기 */
+
+.qna_board {
+    width: 100%;
+    height: 400px;
+}
+
+.qna_h {
+    width: 1260px;
+    height: 130px;
+    background-color: #F8F9F9;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.qna_t td{
+    padding: 20px 20px 0 30px;
+}
+
+.qna_t td input {
+    border: 1px solid #ccc;
+}
+
+.qna_t select {
+    width: 220px;
+}
+
+.qna_i {
+    width: 1260px;
+    height: 270px;
+    border: 1px solid #ccc;
+}
+
+
+/*  글쓰기 버튼 */
+
+.bd_bt {
+    position: relative;
+}
+
+.bd_bt input {
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+/* footer */
+.ft_wp {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.ft_lf a, .ft_lf span{
+    color: #1e90ff;
+    margin-right: 15px;
+}
+
+.ft_lf  {
+   margin-bottom: 10px; 
+}
+/* ------------------------------------ */
+
+
+
+
