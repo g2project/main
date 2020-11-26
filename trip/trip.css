@@ -134,17 +134,18 @@ body {
 
 /* 맨 위 */
 .main {
-    position: relative;
-    text-align: center;
     padding-top: 130px;
-    width: 100%;
     margin-bottom: 80px;
+    margin: 0 auto;
+    height: 400px;
+    width: 960px;
+    position: relative;
 }
 
 .travel {
     position: absolute;
-    top: 47%;
-    left: 25%;
+    top: 55%;
+    left: 0%;
     margin-left: 25px;
     line-height: 3em;
 }
@@ -159,8 +160,6 @@ body {
     color: rgb(1, 35, 75);
     font-weight: bold;
     font-size: 1.2em;
-    margin-left: -55px;
-
 }
 /* ------------------------------------ */
 
