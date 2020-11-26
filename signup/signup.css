@@ -84,7 +84,7 @@ input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
 .form input[type="password"] { width: 400px; }
 /* .form input.birthday{width:60px;}
 .form input.birthyear{width:120px;} */
-.form label { color: #000; font-weight:bold;font-size: 12px;font-family:Arial, Helvetica; }
+.form label { color: #000; font-weight:400;font-size: 14px;}
 .form label.month {width: 135px;}
 .form input, textarea { background-color: rgba(255, 255, 255, 0.4); border: 1px solid #D7DBDD; padding: 7px; font-family: Keffeesatz, Arial; color: #4b4b4b; font-size: 14px; -webkit-border-radius: 5px; margin-bottom: 15px; margin-top: -10px; }
 .form input:focus { 
@@ -119,6 +119,7 @@ input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
 
 .select:focus {outline: none;}
 
+label {font-size: 46px;}
 /* ==========================================================================
    #FORM
    ========================================================================== */
