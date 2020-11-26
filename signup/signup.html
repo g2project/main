@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Demo Beautiful Registration Form with HTML5 and CSS3</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration Form</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" type="text/css" href="signup.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-			<!-- freshdesignweb top bar -->
-            <div class="freshdesignweb-top">
-                <a href="http://www.freshdesignweb.com" target="_blank">Home</a>
-                <span class="right">
-                    <a href="http://www.freshdesignweb.com/beautiful-registration-form-with-html5-and-css3.html">
-                        <strong>Back to the freshdesignweb Article</strong>
-                    </a>
-                </span>
-                <div class="clr"></div>
-            </div><!--/ freshdesignweb top bar -->
-			<header>
-				<h1><span>Tutorials</span> Demo Beautiful Registration Form with HTML5 and CSS3</h1>
-            </header>       
-      <div  class="form">
-    		<form id="contactform"> 
-    			<p class="contact"><label for="name">Name</label></p> 
-    			<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"> 
-    			 
-    			<p class="contact"><label for="email">Email</label></p> 
-    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email"> 
+    <div class="container p-t-130">
+        <div  class="form rec-4 p-t-30 p-b-30">
+            <div class="logo">
+                <span style="color: #4285F4">T</span>
+                <span style="color: #EA4335">o</span>
+                <span style="color: #FBBC05">p </span>
+                <span style="color: #34A853">s</span>
+                <span style="color: #4285F4">i</span>
+                <span style="color: #EA4335">g</span>
+                <span style="color: #FBBC05">h</span>
+                <span style="color: #34A853">t</span>
+                <span style="color: #4285F4">s</span>
+            </div>
+            <p class="intro m-b-30">Create your Top sights Account</p>
+            <form id="contactform"> 
+                <!-- <p class="contact"><label for="name">Name</label></p>  -->
+                <div class="idCheck">
+                    <input class="input--style-4" id="name" name="id" placeholder="ID" required="" tabindex="1" type="text">
+                    <button class="btn btn--radius-2 btn--blue" type="submit" value="ID중복확인">Check</button>
+                </div>
+                <br/>
+                    
+                <!-- <p class="contact"><label for="email">Email</label></p>  -->
+                <input class="input--style-4" id="email" name="email" placeholder="Email Address" required="" type="email">
+                <br/><br/>
                 
-                <p class="contact"><label for="username">Create a username</label></p> 
-    			<input id="username" name="username" placeholder="username" required="" tabindex="2" type="text"> 
-    			 
-                <p class="contact"><label for="password">Create a password</label></p> 
-    			<input type="password" id="password" name="password" required=""> 
-                <p class="contact"><label for="repassword">Confirm your password</label></p> 
-    			<input type="password" id="repassword" name="repassword" required=""> 
-        
-               <fieldset>
-                 <label>Birthday</label>
-                  <label class="month"> 
-                  <select class="select-style" name="BirthMonth">
-                  <option value="">Month</option>
-                  <option  value="01">January</option>
-                  <option value="02">February</option>
-                  <option value="03" >March</option>
-                  <option value="04">April</option>
-                  <option value="05">May</option>
-                  <option value="06">June</option>
-                  <option value="07">July</option>
-                  <option value="08">August</option>
-                  <option value="09">September</option>
-                  <option value="10">October</option>
-                  <option value="11">November</option>
-                  <option value="12" >December</option>
-                  </label>
-                 </select>    
-                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
-                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
-              </fieldset>
-  
-            <select class="select-style gender" name="gender">
-            <option value="select">i am..</option>
-            <option value="m">Male</option>
-            <option value="f">Female</option>
-            <option value="others">Other</option>
-            </select><br><br>
-            
-            <p class="contact"><label for="phone">Mobile phone</label></p> 
-            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> <br>
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	 
-   </form> 
-</div>      
-</div>
+                <!-- <p class="contact"><label for="username">Create a username</label></p>  -->
+                <input class="input--style-4" id="username" name="name" placeholder="User name" required="" tabindex="2" type="text">
+                <br/><br/>
+                
+                <!-- <p class="contact"><label for="username">Create a username</label></p>  -->
+                <input class="input--style-4" id="gender" name="gender" required="" value="1" type="radio">
+                <input class="input--style-4" id="gender" name="gender" required="" value="2" type="radio">
+                <br/><br/> 
+                    
+                <!-- <p class="contact"><label for="password">Create a password</label></p>  -->
+                <input class="input--style-4" type="password" id="password" name="pwd" placeholder="Password" required=""> 
+                <!-- <p class="contact"><label for="repassword">Confirm your password</label></p>  -->
+                <input class="input--style-4" type="password" id="repassword" name="repwd" placeholder="Confirm" required=""> 
+                <br/><br/>
 
+                <div class="zipcodeCheck">
+                    <input class="input--style-4" id="zipcode" name="zipcode" placeholder="Address" required="" tabindex="10" type="text">
+                    <button class="btn btn--radius-2 btn--blue" type="submit">Please search the address</button>
+                </div>
+                <br/><br/>
+
+                <!-- <p class="contact"><label for="birthday">Birthday</label></p>  -->
+                <input class="input--style-4" type="text" id="birthday" name="birthday" placeholder="Birthday" required=""> 
+                <br/><br/>
+                
+                <div>
+                    인터넷<input type="checkbox" name="hobby" value="인터넷">
+					여행<input type="checkbox" name="hobby" value="여행"> 
+                    게임<input type="checkbox" name="hobby" value="게임"> 
+                    영화<input type="checkbox" name="hobby" value="영화"> 
+                    운동<input type="checkbox" name="hobby" value="운동">
+                </div>
+
+                <select name=job>
+                    <option value="0" selected>선택하세요.
+                    <option value="회사원">회사원
+                    <option value="연구전문직">연구전문직
+                    <option value="교수학생">교수학생
+                    <option value="일반자영업">일반자영업
+                    <option value="공무원">공무원
+                    <option value="의료인">의료인
+                    <option value="법조인">법조인
+                    <option value="종교,언론,에술인">종교.언론/예술인
+                    <option value="농,축,수산,광업인">농/축/수산/광업인
+                    <option value="주부">주부
+                    <option value="무직">무직
+                    <option value="기타">기타
+                </select>
+                
+                <div class="button-line">
+                    <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                    <button class="btn btn--radius-2 btn--blue" type="submit">Reset</button>
+                    <button class="btn btn--radius-2 btn--blue" type="submit">Log in</button>
+                </div>
+            </form> 
+        </div>      
+    </div>
 </body>
 </html>
