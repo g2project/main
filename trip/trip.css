@@ -11,8 +11,11 @@ img{border:0;vertical-align:middle}
 table{border-collapse:collapse;border-spacing:0} 
 p{word-wrap:break-word}
 * {box-sizing: border-box;}
-/* ------------------------------------ */
 
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* ------------------------------------ */
 
 
 /* 헤더 */
@@ -132,51 +135,37 @@ p{word-wrap:break-word}
 /* 가운데 맨 위 여행 */
 .main {
     position: relative;
-    margin:0 auto;
+    text-align: center;
     padding-top: 130px;
-    width: 80%;
+    width: 100%;
 }
 
 .travel {
     position: absolute;
-    top: 88%;
-    left: 47%;
-    font-size: 50px;
+    top: 47%;
+    left: 25%;
+    margin-left: 15px;
+    line-height: 3em;
+}
 
-} 
+.travel h1 {
+    color: rgb(0, 0, 49);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.travel p {
+    color: rgb(1, 35, 75);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: -55px;
+
+}
+
+.t
 /* ------------------------------------ */ 
 
 
-/* 검색창 */
-.search {
-    position: relative;
-    margin-top: 45px;
-}
-.search1 {
-    position: relative;
-    margin: 0 auto;
-    border: 1px solid #c8c8c8;
-    border-radius: 30px;
-    background-color: #fff;
-    width: 400px;
-    height: 60px;
-    box-shadow: 3px 3px 5px #c8c8c8;
-}
-
-.search1 > input {
-    position: absolute;
-    margin-top: 23px;
-    margin-left: 60px;
-    border: none;
-    font-size: 1.3em;
-}   
-
-.search2 {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-/* ------------------------------------ */ 
 
 
 /* 가운데 메뉴 버튼 */
