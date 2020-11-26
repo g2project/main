@@ -109,6 +109,16 @@ input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
 .form input[id="address"] { 
   margin-bottom: 10px;}
 
+.form input[name="zipcode"] {width: 200px;}
+
+.form input[name="gender"] {width: 50px;}
+
+.form input[name="hobby"] {width: 40px;}
+
+.select {font-size: 14px !important; width: 400px; height: 30px;}
+
+.select:focus {outline: none;}
+
 /* ==========================================================================
    #FORM
    ========================================================================== */
