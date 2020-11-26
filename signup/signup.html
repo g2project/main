@@ -25,8 +25,8 @@
             <form id="contactform"> 
                 <!-- <p class="contact"><label for="name">Name</label></p>  -->
                 <div class="idCheck">
-                    <input class="input--style-4" id="name" name="name" placeholder="Your name" required="" tabindex="1" type="text">
-                    <button class="btn btn--radius-2 btn--blue" type="submit">Check</button>
+                    <input class="input--style-4" id="name" name="id" placeholder="ID" required="" tabindex="1" type="text">
+                    <button class="btn btn--radius-2 btn--blue" type="submit" value="ID중복확인">Check</button>
                 </div>
                 <br/>
                     
@@ -35,17 +35,22 @@
                 <br/><br/>
                 
                 <!-- <p class="contact"><label for="username">Create a username</label></p>  -->
-                <input class="input--style-4" id="username" name="username" placeholder="Username" required="" tabindex="2" type="text">
+                <input class="input--style-4" id="username" name="name" placeholder="User name" required="" tabindex="2" type="text">
+                <br/><br/>
+                
+                <!-- <p class="contact"><label for="username">Create a username</label></p>  -->
+                <input class="input--style-4" id="gender" name="gender" required="" value="1" type="radio">
+                <input class="input--style-4" id="gender" name="gender" required="" value="2" type="radio">
                 <br/><br/> 
                     
                 <!-- <p class="contact"><label for="password">Create a password</label></p>  -->
-                <input class="input--style-4" type="password" id="password" name="password" placeholder="Password" required=""> 
+                <input class="input--style-4" type="password" id="password" name="pwd" placeholder="Password" required=""> 
                 <!-- <p class="contact"><label for="repassword">Confirm your password</label></p>  -->
-                <input class="input--style-4" type="password" id="repassword" name="repassword" placeholder="Confirm" required=""> 
+                <input class="input--style-4" type="password" id="repassword" name="repwd" placeholder="Confirm" required=""> 
                 <br/><br/>
 
                 <div class="zipcodeCheck">
-                    <input class="input--style-4" id="address" name="address" placeholder="Address" required="" tabindex="10" type="text">
+                    <input class="input--style-4" id="zipcode" name="zipcode" placeholder="Address" required="" tabindex="10" type="text">
                     <button class="btn btn--radius-2 btn--blue" type="submit">Please search the address</button>
                 </div>
                 <br/><br/>
@@ -54,8 +59,29 @@
                 <input class="input--style-4" type="text" id="birthday" name="birthday" placeholder="Birthday" required=""> 
                 <br/><br/>
                 
-                <!-- <p class="contact"><label for="phone">Mobile phone</label></p>  -->
-                <input class="input--style-4" id="phone" name="phone" placeholder="Phone number" required="" type="text"><br/><br/>
+                <div>
+                    인터넷<input type="checkbox" name="hobby" value="인터넷">
+					여행<input type="checkbox" name="hobby" value="여행"> 
+                    게임<input type="checkbox" name="hobby" value="게임"> 
+                    영화<input type="checkbox" name="hobby" value="영화"> 
+                    운동<input type="checkbox" name="hobby" value="운동">
+                </div>
+
+                <select name=job>
+                    <option value="0" selected>선택하세요.
+                    <option value="회사원">회사원
+                    <option value="연구전문직">연구전문직
+                    <option value="교수학생">교수학생
+                    <option value="일반자영업">일반자영업
+                    <option value="공무원">공무원
+                    <option value="의료인">의료인
+                    <option value="법조인">법조인
+                    <option value="종교,언론,에술인">종교.언론/예술인
+                    <option value="농,축,수산,광업인">농/축/수산/광업인
+                    <option value="주부">주부
+                    <option value="무직">무직
+                    <option value="기타">기타
+                </select>
                 
                 <div class="button-line">
                     <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
