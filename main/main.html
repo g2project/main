@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
 
     <link href="main.css" rel="stylesheet" type="text/css"> 
     <script src="js/main.js"></script>
@@ -173,69 +170,68 @@
         </div>
         <!-- 왼쪽사이드바 로고 5개 끝 -->
          <!-- 백그라운드 이미지 슬라이드 -->
-         <div id="wrapper">
-            <div id="slider-wrap">
-                <ul id="slider">
-                   <li>
-                      <div>
-                          <h3>Slide #1</h3>
-                          <span>Sub-title #1</span>
-                      </div>                
-      <img src="img/background1.png">
-                   </li>
-                   
-                   <li>
-                      <div>
-                          <h3>Slide #2</h3>
-                          <span>Sub-title #2</span>
-                      </div>
-      <img src="img/background2.png">
-                   </li>
-                   
-                   <li>
-                      <div>
-                          <h3>Slide #3</h3>
-                          <span>Sub-title #3</span>
-                      </div>
-      <img src="img/background3.png">
-                   </li>
-                   
-                   <li>
-                      <div>
-                          <h3>Slide #4</h3>
-                          <span>Sub-title #4</span>
-                      </div>
-      <img src="img/background4.png">
-                   </li>
-                   
-                   <li>
-                      <div>
-                          <h3>Slide #5</h3>
-                          <span>Sub-title #5</span>
-                      </div>
-      <img src="img/background5.png">
-                   </li>
-                   
-                   
-                </ul>
-                
-                 <!--controls-->
-                <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-                <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-                <div id="counter"></div>
-                
-                <div id="pagination-wrap">
-                  <ul>
-                  </ul>
-                </div>
-                <!--controls-->  
-                       
+         <div id="mainFrm">
+         <div class="content">
+         <div class="slideshow-container">
+         
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="./img/background1.png" style="width:100%">         
             </div>
+      
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="./img/background2.png" style="width:100%">         
+            </div>
+      
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="./img/background3.png" style="width:100%">     
+            </div>
+      
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="./img/background4.png" style="width:100%">      
+            </div>
+      
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="./img/background5.png" style="width:100%">         
+            </div>
+      
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="./img/background6.png style="width:100%">
+            </div>
+      
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>
+
+            <div class="autoimg" style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+          </div>
+          <br/>
+          
+          <!-- The dots/circles -->
+         
+        </div>  
+            <!--백그라운드 이미지 슬라이드 끝 -->
+         <div class="content2">
         
          </div>
-            <!--백그라운드 이미지 슬라이드 끝 -->
+         <div class="content2">
 
 
+         </div>
+        </div>
         <div class=bor_1></div>
           <div class="footerLink">
               <ul>
@@ -246,6 +242,5 @@
                   <a href="https://g2project.github.io/main/qna/qna.html"><li>고객센터</li></a>
               </ul>
             </div>>
-
 </body>
 </html>
