@@ -31,9 +31,6 @@
 
     .dt_ec {
         width: 290px;
-        /* height: 250px; */
-        /* border-radius: 8px; */
-        /* margin-right: 1px; */
         vertical-align: top;
         position: relative;
         overflow: hidden;
@@ -168,7 +165,7 @@
 
 
 <div id="dt_cv" style="visibility: hidden;">
-    <div id="dt_js">
+    <div id="dt_js" >
         
         <div class="dt_ro">
             <div class="dt_pr"        >
@@ -406,10 +403,16 @@
         var width = x.clientWidth;
         x.style.height = height + 'px';
         x.style.width = width + 'px';
+
+        // x.style.visibility = 'hidden';
+        x.style.opacity = '0';
+        x.style.height = '0';
+        x.style.width = '0';
     
         btn.addEventListener('click', function(){
             if (x.style.visibility == 'hidden') {
             x.style.visibility = 'visible';
+            // x.classList.add('dt_js');
             x.style.opacity = '1';
             x.style.height = height + 'px';
             x.style.width = width + 'px';
