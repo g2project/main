@@ -156,6 +156,7 @@ body {
     object-fit: cover;
     filter: brightness(70%);
     border-radius: 10px;
+    
 }
 
 .travel {
@@ -232,6 +233,7 @@ body {
 .p_2 img {
     width: 580px;
     height: 320px;
+    border: 1px solid #ccc;
     border-radius: 10px;
     object-fit: cover;
 }

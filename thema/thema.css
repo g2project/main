@@ -148,7 +148,7 @@ body {
 .main {
     margin-bottom: 80px;
     margin: 0 auto;
-    height: 350px;
+    height: 300px;
     width: 1200px;
     position: relative;
 }
@@ -156,7 +156,7 @@ body {
 .main img {
     object-fit: cover;
     filter: brightness(70%);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .travel {
@@ -181,10 +181,138 @@ body {
 /* ------------------------------------ */
 
 
-/* 메인컨텐츠 - 카테고리별 여행 */
+
+/* 메인네비 */
+
+.nv {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    border-top-color: #fff;
+}
+
+.nv_s {
+    margin-top: 13px;
+    width: 300px;
+    height: 40px;
+}
+
+.nv .h {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.nv p {
+    letter-spacing: 0.5px;
+    font-size: 1.2em;
+}
+
+/* ------------------------------------ */
+
+
+
+
+/* 메인컨텐츠*/
 .thema {
     width: 1200px;
     margin: 0 auto;
     border: 1px solid red;
+}
+
+
+.ts_wp {
+    margin-bottom: 30px;
+    /* border: 1px solid blue; */
+}
+
+.ts_wp > div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.ts_pt {
+    width: calc((100% - 34px)/3);
+    height: calc(200px + 4vw);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 13px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.pt_im {
+    width: 100%;
+    height: 9vw;
+    /* border: 1px solid green; */
+}
+
+.pt_im img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.pt_dt {
+    width: 100%;
+    padding: 15px 10px 0 10px;
+}
+
+.pt_tt {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pt_rt {
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.pt_rt div {
+    display: inline;
+    font-size: 0;
+}
+
+.pt_rt div span {
+    font-size: 16px;
+    padding: 0;
+    margin-right: -5px;
+}
+
+.pt_sf {
+    color: #fbbc04;
+}
+
+.pt_rt div+span {
+    margin-left: 10px;
+}
+
+.pt_ap {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.pt_sv {
+    width: 34px;
+    height: 34px;
+    padding-top: 7px;
+    border-radius: 50%;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    background: rgba(48, 48, 48, 0.6);
+}
+
+.pt_sv svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
 }
 /* ------------------------------------ */
