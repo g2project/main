@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  transition: height 0.1s, width 0s, padding 0.1s, visibility 0.1s, opacity 0.1s ease-out;
+}
+</style>
+</head>
+<body>
+
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+<button id="btn">Try it</button>
+
+<div id="myDIV" style="visibility: hidden; padding: 0; height: 0;">
+This is my DIV element.
+</div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+    var btn = document.getElementById('btn');
+    var x = document.getElementById("myDIV");
+    var height = x.clientHeight;
+    var width = x.clientWidth;
+    x.style.height = height + 'px';
+    x.style.width = width + 'px';
+
+    btn.addEventListener('click', function(){
+        if (x.style.visibility == 'hidden') {
+        x.style.visibility = 'visible';
+        x.style.opacity = '1';
+        x.style.padding = '50px 0';
+        x.style.height = height + 'px';
+        x.style.width = width + 'px';
+        } else {
+        x.style.visibility = 'hidden';
+        x.style.opacity = '0';
+        x.style.padding = '0';
+        x.style.height = '0';
+        x.style.width = '0';
+    }
+    });
+</script>
+
+</body>
+</html>
