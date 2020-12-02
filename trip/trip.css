@@ -91,14 +91,13 @@ p{word-wrap:break-word}
 
 
 /* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
-
-#sb {
+#sb, #center, #mp_wp {
     margin-top: 60px;
     padding-top: 5px;
 }
 
 #sb {
-    width: 100px;
+    width: 92px;
     height: 500px;
     /* border: 1px solid red; */
     text-align: center;
@@ -107,26 +106,68 @@ p{word-wrap:break-word}
     background-color: #fff;;
 }
 
+#center {
+    width: calc(59% - 20px);
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    display: inline-block;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+#mp_wp {
+    width: calc(100% - 70px - 60%);
+    height: calc(100% - 60px);
+    padding: 20px;
+    /* border: 1px solid red; */
+    display: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+    /* visibility: hidden; */
+}
 /* ------------------------------------ */
+
 
 
 /* 사이드바 */
 #sb > nav > div {
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
 }
 
 .sb_it {
     text-align: center;
 }
 
-.sb_it svg{
+.sb_svg {
     width: 24px;
     height: 24px;
+    fill: #626567;
 }
 
 .sb_it button {
+    width: 90px;
+    height: 90px;
     background-color: #fff;
+    border-radius: 2px;
     border: none;
+}
+
+.sb_btn:hover {
+    background-color: #eff0f1;
+    cursor: pointer;
+}
+
+.sb_btn_active {
+    color: #1967d2;
+}
+
+.sb_svg_active {
+    fill: #1967d2;
+}
+
+.sb_btn_active:hover {
+    background-color: #e8f0fe;
 }
 /* ------------------------------------ */
 
@@ -135,10 +176,17 @@ p{word-wrap:break-word}
 /* 컨테이너 */
 .container {
     margin: 0 auto;
-    margin-top: 100px;
-    width: 1900px;
+    width: 1500px;
 }
 
+/* ------------------------------------ */
+
+
+/* 컨텐츠 */
+.content {
+    width: 99%;
+    padding-top: 80px;
+}
 /* ------------------------------------ */
 
 
