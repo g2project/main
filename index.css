@@ -747,3 +747,186 @@ p{word-wrap:break-word}
     height: 100%;
 }
 /* ------------------------------------ */
+
+
+
+
+
+
+
+
+/* detail script */
+#center_test {
+    width: calc(59% - 20px);
+    height: 750px;
+    margin-left: 100px;
+    display: inline-block;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.ma_dt_wp {
+    width: 100%;
+    height: calc(610px-0.01vw);
+    padding: 15px;
+    background-color: #eee;
+    transition: height 0.1s, width 0s, padding 0.1s, visibility 0.1s, opacity 0.1s ease-out;
+}
+
+.ma_dt_oc {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ma_dt_pp {
+    width: 5500px;
+    position: relative;
+}
+
+.ma_dt_ec {
+    width: 290px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.ma_dt_ec img {
+    height: 190px;
+}
+
+.ma_dt_nm {
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+.ma_dt_nm a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.ma_dt_bs {
+    width: 100%;
+    padding: 25px 20px;
+    color: #333;
+    overflow: hidden;
+}
+
+.ma_dt_tb {
+    width: 100%;
+    height: 100%;
+}
+
+.ma_tb_lf {
+    vertical-align: top;
+    width: 55%;
+}
+
+.ma_tb_rt {
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 35%;
+}
+
+.ma_dt_bs h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.ma_md_hr {
+    margin-left: -20px;
+    width: 120%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.ma_md_ht {
+    margin-left: -20px;
+    width: 120%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.ma_dt_tt {
+    margin-bottom: 20px;
+}
+
+.ma_dt_at {
+    font-size: 13px;
+    line-height: 1.7em;
+}
+
+.ma_rt_tt {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ma_rt_tb {
+    vertical-align: top;
+}
+
+.ma_bt_sy {
+    padding-left: 15px;
+    padding-bottom: 18px;
+}
+
+.ma_bt_sy a {
+    font-size: 13px;
+}
+
+.ma_dt_mo {
+    width: 100%;
+    text-align: center;
+}
+
+.ma_dt_mo span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c87eb;
+}
+
+.ma_dt_hl {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.ma_dt_ll {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.ma_dt_mt {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3c87eb;
+}
+
+.ma_dt_mt {
+    height: 100%;
+    position: relative;
+}
+
+.ma_dt_bp {
+    line-height: 3em;
+}
+/* ------------------------------------ */
