@@ -16,7 +16,7 @@ p{word-wrap:break-word}
 
 #center_test {
     width: calc(59% - 20px);
-    height: 750px;
+    /* height: 750px; */
     margin-left: 100px;
     display: inline-block;
     padding-right: 10px;
