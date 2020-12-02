@@ -10,7 +10,11 @@
     <link href="trip.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>  
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9197beab6d.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -172,384 +176,88 @@
 
 
           <!-- 가운데 전체 프레임 -->
-          <div id="content">
-            <!-- 맨 위 여행 시작 -->
+          <div class="container">
+
+            <!-- 메인 배너 시작 -->
             <div class="main">
-                <div class="background">
-                    <img src="https://github.com/g2project/main/blob/main/trip/image/back.PNG?raw=true">
-                </div>
-                <div class="travel">
-                    <p>여행</p>
-                </div>
+                    <img src="https://github.com/g2project/main/blob/main/trip/image/67e92970-f08d-4a45-a4dc-da751fd454df.png?raw=true" width="1200" height="300">
+                <span class="travel">
+                    <h1>제주도, 어디로 떠나볼까요?</h1>
+                    <p>테마가 있는 여행부터 식도락여행 이색체험까지!</p>
+                </span>
             </div>
-            <!-- 맨 위 여행 끝 -->
+            <!-- 메인 배너 끝 -->
 
 
-            <!-- 검색창 시작 -->
-            <div class="search">
-                <div class="search1">
-                    <span class="search2">
-                        <img src="https://github.com/g2project/main/blob/main/trip/image/icon.PNG?raw=true">
-                    </span>
-                    <input type="text" placeholder="항공편, 호텔 등 검색">
+            <!-- 메인 컨텐츠 시작 -->
+            <div class="thema">
+
+                <!-- 메인 문구 시작-->
+                <div class="tp">
+                    <span style="color: #c9c9c9;"><i class="fas fa-plane fa-lg"></i></span><p>Top Sights가 준비한 특별한 제주여행</p>
                 </div>
-            </div>
-            <!--검색창 끝 -->
+                <!-- 메인 문구 끝 -->
             
 
-            <!-- 가운데 메뉴버튼 시작 -->
-            <div class="menu1">
-                <div class="menu2">
 
-                     <!-- 로고5개 중 1번 여행 -->   
-                    <div class="trip">
-                        <a class="sb_it sb_i1" href="https://g2project.github.io/main/trip/trip.html">
-                            <button class="btn" >
-                                <div class=""></div>
-                                <span class="">
-                                    <!-- 로고5개 중 1번 여행 아이콘 -->
-                                    <svg width="24" height="24" viewBox="0 0 24 24">
-                                        <path d="M13.97 5.34c.01-.11.03-.22.03-.34 0-1.1-.9-2-2-2s-2 .9-2 2c0 .12.02.23.03.34A5.997 5.997 0 0 0 6 11v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-2.62-1.69-4.85-4.03-5.66zM12 4c.55 0 1 .45 1 1 0 .03-.01.06-.02.09-.32-.06-.64-.09-.98-.09s-.66.03-.98.09C11.01 5.06 11 5.03 11 5c0-.55.45-1 1-1zm3 14H9v-1.5h6V18zm-2.06-6.06L12 14l-.94-2.06L9 11l2.06-.94L12 8l.94 2.06L15 11l-2.06.94z"></path>
-                                    </svg>
-                                    <!-- 로고5개 중 1번 여행 아이콘 밑 제목 Trips -->
+                <!-- 카테고리별 여행 시작 -->
+                <div class="pick">
+                    
+                    <a class="" href="https://g2project.github.io/main/thema/thema.html">
+                        <div class="p_1">
+                            <div class="p_2">
+                                <img src="https://github.com/g2project/main/blob/main/trip/image/tm.jpg?raw=true">
+                                <span class="p_3">
+                                    <p>낭만이 가득한</p>
+                                    <h1>테 마 여 행</h1>
                                 </span>
-                                <div class="">
-                                    <span>
-                                        Trips
-                                        <div class=""></div>
-                                    </span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                    <!-- 로고5개 중 2번 Things to do -->  
-                    <div class="trip">
-                        <a class="sb_it sb_i2" href="https://g2project.github.io/main/main_sub/sub_main.html">
-                            <button class="btn">
-                                <div class=""></div>
-                                <!-- 로고5개 중 2번 Things to do 아이콘 -->
-                                <svg viewBox="0 0 612 612">
-                                    <circle cx="256" cy="277.333" r="106.667"/>
-                                    <path d="M469.333,106.667h-67.656c-8.552,0-16.583-3.333-22.635-9.375l-39-39c-10.073-10.073-23.469-15.625-37.719-15.625     h-92.646c-14.25,0-27.646,5.552-37.719,15.625l-39,39c-6.052,6.042-14.083,9.375-22.635,9.375H42.667     C19.135,106.667,0,125.802,0,149.333v277.333c0,23.531,19.135,42.667,42.667,42.667h426.667     c23.531,0,42.667-19.135,42.667-42.667V149.333C512,125.802,492.865,106.667,469.333,106.667z M256,405.333     c-70.583,0-128-57.417-128-128s57.417-128,128-128s128,57.417,128,128S326.583,405.333,256,405.333z M426.667,213.333     c-11.76,0-21.333-9.573-21.333-21.333s9.573-21.333,21.333-21.333S448,180.24,448,192S438.427,213.333,426.667,213.333z"/>
-                                </svg>
-                                <!-- 로고5개 중 2번 아이콘 밑 제목 Things to do -->
-                                <div class="">
-                                    <span>
-                                        Things to do
-                                        <div class=""></div>
-                                    </span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
+                            </div>
+                        </div>
+                    </a>
 
-                    <!-- 로고5개 중 3번 Flights -->
-                    <div class="trip">
-                        <a class="sb_it sb_i3" href="https://g2project.github.io/main/sub_flight/sub_flight.html">
-                            <button class="btn">
-                                <div class=""></div>
-                                <!-- 로고5개 중 3번 Flights 아이콘 -->
-                                <svg viewBox="0 0 612 612">
-                                    <path d="M496.469,353.365l-197.781-197.76V67.904c0-13.845-3.072-27.797-9.131-40.811l-4.501-8.533    C279.744,7.104,268.629,0,256.021,0s-23.723,7.104-28.8,18.069l-4.971,9.493c-5.824,12.544-8.896,26.475-8.896,40.341v87.701    L15.637,353.323C5.568,363.392,0.021,376.768,0.021,391.019v25.003c0,3.904,2.133,7.488,5.547,9.344    c3.413,1.877,7.595,1.749,10.88-0.384l201.045-128.832c1.984,32.277,4.672,59.221,7.957,92.011l3.392,33.6l-74.688,49.344    c-3.008,2.005-4.8,5.333-4.8,8.917v21.333c0,3.221,1.472,6.293,3.989,8.32c2.539,2.048,5.845,2.816,8.981,2.112l93.696-20.843    l93.696,20.843c0.768,0.171,1.536,0.256,2.304,0.256c2.411,0,4.757-0.811,6.677-2.347c2.517-2.048,3.989-5.12,3.989-8.341v-21.333    c0-3.584-1.792-6.933-4.8-8.896l-74.688-49.28l3.392-33.707c3.285-32.747,5.973-59.669,7.957-91.947l201.045,128.789    c3.307,2.133,7.467,2.24,10.859,0.384c3.435-1.856,5.568-5.44,5.568-9.344v-25.003    C512.021,376.768,506.496,363.392,496.469,353.365z"/>
-                                </svg>
-                                <!-- 로고5개 중 3번 아이콘 밑 제목 Flights -->
-                                <div class="">
-                                    <span>
-                                        Flights
-                                        <div class=""></div>
-                                    </span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
+                    <a class="" href="#"></a>
+                        <div class="p_1">
+                            <div class="p_2">
+                                <img src="https://github.com/g2project/main/blob/main/trip/image/fd.jpg?raw=true">
+                                <span class="p_3">
+                                    <p>제주의 맛을 느낄수 있는</p>
+                                    <h1>푸 디 여 행</h1>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
 
-                    <!-- 로고5개 중 4번 Hotels -->
-                    <div class="trip">
-                        <a class="sb_it sb_i4" href="http://changmi12.dothome.co.kr/hotels.html">
-                            <button class="btn">
-                                <div class=""></div>
-                                <!-- 로고5개 중 4번 아이콘 -->
-                                <svg viewBox="0 0 612 612">
-                                    <path d="M501.333,277.333h-416V74.667C85.333,68.771,80.563,64,74.667,64h-64C4.771,64,0,68.771,0,74.667v362.667     C0,443.229,4.771,448,10.667,448h64c5.896,0,10.667-4.771,10.667-10.667v-74.667h341.333v74.667     c0,5.896,4.771,10.667,10.667,10.667h64c5.896,0,10.667-4.771,10.667-10.667V288C512,282.104,507.229,277.333,501.333,277.333z"/>
-                                    <circle cx="170.667" cy="192" r="64"/>
-                                    <path d="M266.667,256h234.667c5.896,0,10.667-4.771,10.667-10.667C512,180.635,459.365,128,394.667,128h-128     c-5.896,0-10.667,4.771-10.667,10.667v106.667C256,251.229,260.771,256,266.667,256z"/>
-                                </svg>
-                                <!-- 로고5개 중 4번 아이콘 밑 제목 Hotels -->
-                                <div class="">
-                                    <span>
-                                        Hotels
-                                        <div class=""></div>
-                                    </span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
+                    <a class="" href="#"></a>
+                        <div class="p_1">
+                            <div class="p_2">
+                                <img src="https://github.com/g2project/main/blob/main/trip/image/db2.PNG?raw=true">
+                                <span class="p_3">
+                                    <p>걷기만 해도 힐링 되는</p>
+                                    <h1>도 보 여 행</h1>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
 
-                    <!-- 로고5개 중 5번 Holiday homes -->
-                    <div class="trip">
-                        <a class="sb_it sb_i5" href="https://g2project.github.io/main/Holidays/HolidayHomes.html">
-                            <button class="btn">
-                                <div class=""></div>
-                                <!-- 로고5개 중 5번 아이콘 -->
-                                <svg viewBox="0 0 30 30">
-                                    <path style="fill:#030104;" d="M3.674,24.876c0,0-0.024,0.604,0.566,0.604c0.734,0,6.811-0.008,6.811-0.008l0.01-5.581   c0,0-0.096-0.92,0.797-0.92h2.826c1.056,0,0.991,0.92,0.991,0.92l-0.012,5.563c0,0,5.762,0,6.667,0   c0.749,0,0.715-0.752,0.715-0.752V14.413l-9.396-8.358l-9.975,8.358C3.674,14.413,3.674,24.876,3.674,24.876z"/>
-                                    <path style="fill:#030104;" d="M0,13.635c0,0,0.847,1.561,2.694,0l11.038-9.338l10.349,9.28c2.138,1.542,2.939,0,2.939,0   L13.732,1.54L0,13.635z"/>
-                                    <polygon style="fill:#030104;" points="23.83,4.275 21.168,4.275 21.179,7.503 23.83,9.752  "/>
-                                </svg>
-                                <!-- 로고5개 중 5번 아이콘 밑 제목 Holiday homes -->
-                                <div class="">
-                                    <span jsname="iSelEd">
-                                        Holiday homes
-                                        <div class=""></div>
-                                    </span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
+                    <a class="" href="#"></a>
+                        <div class="p_1">
+                            <div class="p_2">
+                                <img src="https://github.com/g2project/main/blob/main/trip/image/hy.jpg?raw=true">
+                                <span class="p_3">
+                                    <p>자연과 함께 즐기는</p>
+                                    <h1>체 험 여 행</h1>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
+                <!-- 카테고리별 여행 끝 -->
+
             </div>
-            <!-- 가운데 메뉴버튼 끝 -->
-
-            <!-- 여행 후보지 시작-->
-            <div class="travelcandidate">
-                <div class="t_c1">
-                    <h1>여행후보지</h1>
-                    <p>최근 검색과 기타 활동을 바탕으로 표시되는 정보입니다.</p>
-                </div>
-                <div class="t_c2">
-
-                    <div class="t_c_img">
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="https://g2project.github.io/main/candidate/candidate.html"><img class="tc1" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t1"><h2>제주시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="https://g2project.github.io/main/candidate/candidate.html">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="https://g2project.github.io/main/candidate/candidate.html">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc2" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t2"><h2>서울특별시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc3" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t3"><h2>무주군</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc4" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t4"><h2>고양시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc5" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t5"><h2>제주시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc6" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t6"><h2>전주시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="t_cc">
-                            <div class="tc_img">
-                                <a href="#"><img class="tc7" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                                <div class="tc_t7"><h2>인천광역시</h2>
-                                </div>
-                            </div>
-                            <div class="t_c_i">
-                                <div class="tc_b1">
-                                    <a href="#">이 장소의 여행장소를 검색한 적이 있습니다.</a>
-                                </div>
-                                <div class="tc_b2">
-                                    <a href="#">여행 계획 계속하기</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="tc_img">
-                            <a href="#"><img class="tc2" src="https://github.com/g2project/main/blob/main/trip/image/trip2.jpg?raw=true"></a>
-                            <div class="tc_t2"><h2>서귀포시</h2>
-                            </div>
-                        </div>
-                        <div class="tc_img">
-                            <a href="#"><img class="tc3" src="https://github.com/g2project/main/blob/main/trip/image/trip3.jpg?raw=true"></a>
-                            <div class="tc_t3"><h2>제주시</h2>
-                            </div>
-                        </div>
-                        <div class="tc_img">
-                            <a href="#"><img class="tc4" src="https://github.com/g2project/main/blob/main/trip/image/trip4.jpg?raw=true"></a>
-                            <div class="tc_t4"><h2>고양시</h2>
-                            </div>
-                        </div>
-                        <div class="tc_img">
-                            <a href="#"><img class="tc5" src="https://github.com/g2project/main/blob/main/trip/image/trip5.jpg?raw=true"></a>
-                            <div class="tc_t5"><h2>인천광역시</h2>
-                            </div>
-                        </div>
-                        <div class="tc_img">
-                            <a href="#"><img class="tc6" src="https://github.com/g2project/main/blob/main/trip/image/trip6.jpg?raw=true"></a>
-                            <div class="tc_t6"><h2>무주군</h2>
-                            </div>
-                        </div>
-                        <div class="tc_img">
-                            <a href="#"><img class="tc7" src="https://github.com/g2project/main/blob/main/trip/image/trip6.jpg?raw=true"></a>
-                            <div class="tc_t7"><h2>전주시</h2>
-                            </div>
-                        </div> -->
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- 여행 페이지로 돌아가기 시작 -->
-            <div class="travelpage">
-                <img src="https://github.com/g2project/main/blob/main/trip/image/travel_logo.png?raw=true">
-                <div class="backvisit">
-                        <h2>언제든 여행 페이지로 돌아가기</h2>
-                        <p>나의 모든 여행을 확인하려면 <a href="https://g2project.github.io/main/trip/trip.html">google.com/travel</a> 페이지를 방문하세요.</p>
-                </div>
-            </div>
-            <!-- 여행 페이지로 돌아가기 끝 -->
-
-            <!-- 인기있는 목적지 시작 -->
-            <div class="popular">
-                <div class="popular2">
-                    <p>인기 있는 목적지</p>
-                </div>
-                <div class="popular1">
-
-
-                    <div class="popularimg">
-
-                        
-                        <div class="img">
-                            <a href="#"><img class="pic1" src="https://github.com/g2project/main/blob/main/trip/image/trip1.jpg?raw=true"></a>
-                            <div class="title1"><h2>서귀포시</h2>
-                                <div class="detailed1"><p>폭포, 카지노, 박물관 및 절벽</p></div>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <a href="#"><img class="pic2" src="https://github.com/g2project/main/blob/main/trip/image/trip2.jpg?raw=true"></a>
-                            <div class="title2"><h2>제주시</h2>
-                                <div class="detailed2">민속 박물관 및 해수 사우나</div>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <a href="#"><img class="pic3" src="https://github.com/g2project/main/blob/main/trip/image/trip3.jpg?raw=true"></a>
-                            <div class="title3"><h2>오사카시</h2>
-                                <div class="detailed3">오사카 성이 있는 현대적인 항구 도시</div>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <a href="#"><img class="pic4" src="https://github.com/g2project/main/blob/main/trip/image/trip4.jpg?raw=true"></a>
-                            <div class="title4"><h2>부산광역시</h2>
-                                <div class="detailed4">해운대 해수욕장,절,산</div>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <a href="#"><img class="pic5" src="https://github.com/g2project/main/blob/main/trip/image/trip5.jpg?raw=true"></a>
-                            <div class="title5"><h2>경주시</h2>
-                                <div class="detailed5">불국사 및 석굴암</div>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <a href="#"><img class="pic6" src="https://github.com/g2project/main/blob/main/trip/image/trip6.jpg?raw=true"></a>
-                            <div class="title6"><h2>괌</h2>
-                                <div class="detailed6">투몬 만,열대 해변,2차 세계 대전 유적지</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <!-- 인기있는 목적지 끝 -->
-
         </div>
-
-        <div class=bor_1></div>
-          <div class="footerLink">
-              <ul>
-                  <a href="#"><li>정보</li></a>
-                  <a href="#"><li>개인정보처리방침</li></a>
-                  <a href="#"><li>서비스 약관</li></a>
-                  <a href="#"><li>의견</li></a>
-                  <a href="https://g2project.github.io/main/qna/qna.html"><li>고객센터</li></a>
-              </ul>
-            </div>>
+             <!-- 메인 컨텐츠 끝 -->
+    
 
 </body>
 </html>

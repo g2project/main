@@ -11,8 +11,11 @@ img{border:0;vertical-align:middle}
 table{border-collapse:collapse;border-spacing:0} 
 p{word-wrap:break-word}
 * {box-sizing: border-box;}
-/* ------------------------------------ */
 
+/* body {
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+/* ------------------------------------ */
 
 
 /* 헤더 */
@@ -129,277 +132,126 @@ p{word-wrap:break-word}
 
 
 
-/* 가운데 맨 위 여행 */
+/* 컨테이너 */
+.container {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1900px;
+}
+
+/* ------------------------------------ */
+
+
+
+/* 메인 배너 */
 .main {
+    margin-bottom: 100px;
+    margin: 0 auto;
+    height: 350px;
+    width: 1200px;
     position: relative;
-    margin:0 auto;
-    padding-top: 130px;
-    width: 80%;
+}
+
+.main img {
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 10px;
+    
 }
 
 .travel {
     position: absolute;
-    top: 88%;
-    left: 47%;
-    font-size: 50px;
-
-} 
-/* ------------------------------------ */ 
-
-
-/* 검색창 */
-.search {
-    position: relative;
-    margin-top: 45px;
+    top: 23%;
+    left: 0%;
+    margin-left: 25px;
+    line-height: 3.5em;
 }
-.search1 {
-    position: relative;
+
+.travel h1 {
+    /* color: rgb(0, 0, 49); */
+    color: #fff;
+    font-size: 2.7em;
+}
+
+.travel p {
+    /* color: rgb(1, 35, 75); */
+    color: #fff;
+    font-size: 1.4em;
+}
+/* ------------------------------------ */
+
+
+/* 메인컨텐츠 - 카테고리별 여행 */
+.thema {
+    width: 1200px;
     margin: 0 auto;
-    border: 1px solid #c8c8c8;
-    border-radius: 30px;
-    background-color: #fff;
-    width: 400px;
-    height: 60px;
-    box-shadow: 3px 3px 5px #c8c8c8;
+    /*border: 1px solid red;*/
 }
 
-.search1 > input {
-    position: absolute;
-    margin-top: 23px;
-    margin-left: 60px;
-    border: none;
-    font-size: 1.3em;
-}   
-
-.search2 {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-/* ------------------------------------ */ 
-
-
-/* 가운데 메뉴 버튼 */
-.menu1 {
-    position: relative;
-    left: 29.5%;
-    margin-top: 30px;
-    width: 40%;
-}
-
-.btn:hover {
-    background-color: #e9e9e9;
-}
-
-.menu2 {
-    position: absolute;
-    left: 20%;
-}
-
-.trip {
-    padding: 15px;
-    float: left;
-}
-/* ------------------------------------ */ 
-
-
-/* 여행 후보지 */
-.travelcandidate {
-    position: relative;
-    margin-top: 130px;
-    border: 1px solid #fff;
-    width: 55%;
-    height: 1100px;
-    left: 23%;
-}
-
-.t_c1 {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: -15px;
-    line-height: 2.7em;
-}
-
-.t_c2 {
-    width: 93%;
-    margin: 25px;
-}
-
-.tc_img{
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-}
-
-.t_cc {
-    float: left;
-}
-
-.tc1, .tc2, .tc3, .tc4, .tc5, .tc6, .tc7 {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    z-index: -9999;
-}
-
-.tc_t1, .tc_t2, .tc_t3  {
-    position: absolute;
-    width: 30%;
-    top: 25%;
-    margin: 10px;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-}
-
-.tc_t4, .tc_t5, .tc_t6 {
-    position: absolute;
-    width: 30%;
-    top: 53%;
-    margin: 10px;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-}
-
-.tc_t7 {
-    position: absolute;
-    width: 30%;
-    top: 81%;
-    margin: 10px;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-}
-
-.tc_b1 {
-    width: 300px;
-    padding: 15px;
-    border: 1px solid #c8c8c8;
-    border-bottom: none;
-}
-
-.tc_b2 {
-    width: 300px;
-    padding: 15px;
-    border: 1px solid #c8c8c8;
-    border-radius: 0 0 10px 10px;
-    text-align: center;
-}
-
-.tc_b1 a {
-    margin-left: 18px;
-}
-
-.tc_b2 a {
-    color: skyblue;
-    font-size: 1.2em;
-}
-
-.t_c_i {
-    margin-left: 10px;
-    margin-top: -10px;
-}
-/* ------------------------------------ */ 
-
-/* 여행페이지로 돌아가기 */
-.travelpage {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 50%;
-    margin-top: -20px;
-    margin-left: 469px;
-}
-
-.travelpage > img {
-    float: left;
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-}
-
-.backvisit {
-    line-height: 2.5em;
-    margin: 25px;
-}
-/* ------------------------------------ */ 
-
-
-/* 인기 있는 목적지 */
-.popular {
-    position: relative;
-    border: 1px solid #fff;
-    border-bottom: 1px solid #c8c8c8;
-    width: 55%;
-    height: 550px;
-    left: 23%;
-    margin-bottom: -20px;
-}
-
-.popular1 {
-    width: 93%;
-    margin: 25px;
-    height: 450px;
-}
-
-.popular2 {
-    font-size: 2em;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: -18px;
-}
-
-.img {
-    width: 300px;
-    height: 200px;
-    float: left;
-    margin: 10px;
-}
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    position: relative;
-    z-index: -9999;
-}
-
-.title1, .title2, .title3  {
-    position: absolute;
-    width: 30%;
-    top: 40%;
-    margin: 10px;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-}
-
-.title4, .title5, .title6 {
-    position: absolute;
-    width: 30%;
-    top: 80%;
-    margin: 10px;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-}
-
-.detailed1, .detailed2, .detailed3, .detailed4, .detailed5, .detailed6 {
+.tp {
     width: 100%;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 30px 0 0 15px;
 }
-/* ------------------------------------ */ 
+
+.tp span {
+    float: left;
+    margin-right: 7px;
+}
+
+.pick {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    /*border: 1px solid blue;*/
+
+}
+
+.p_1 {
+    width: 50%;
+    height: 340px;
+    float: left;
+    padding-left: 3px;
+    /*border: 1px solid green;*/
+    position: relative;
+
+}
+.p_1:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.p_2 {
+    padding: 5px;
+    width: 590px;
+    height: 330px;
+    /*border: 1px solid purple;*/
+}
+
+.p_2 img {
+    width: 580px;
+    height: 320px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
 
-/* 푸터 */ 
-
-.footerLink ul {
-    margin-top: 10px;
+.p_3 {
+    width: 350px;
+    height: 130px;
+    padding-top: 5px;
+    line-height: 2.5em;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
     text-align: center;
-    font-size: 1.2em;
+    position: absolute;
+    left: 21%;
+    top: 30%;
+    font-size: 1.7em;
 }
 
-.footerLink li{
-    display: inline-block;
-}
-
-.footerLink a{
-    display: inline-block; /*인라인한 요소에 padding값을 줄경우 display: inline-block 사용해줘야함*/
-    padding: 20px;
-    color: royalblue;
-}
-/* ------------------------------------ */ 
+/* ------------------------------------ */
