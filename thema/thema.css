@@ -253,12 +253,12 @@ p{word-wrap:break-word}
     height: 50px;
 }
 
-.nv .h_1 {
+.nv_s .h_1 {
     float: left;
-    margin: 0 5px 0 10px;
+    margin: 1px 5px 0 10px;
 }
 
-.p_1 {
+.nv_s .p_1 {
     padding-top: 5px;
     letter-spacing: 0.5px;
     font-size: 1.1em;
