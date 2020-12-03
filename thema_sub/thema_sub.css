@@ -1,0 +1,527 @@
+/* 초기화 코드 initialization code */
+@charset "utf-8";
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {font: 12px "Roboto", "Arial Narrow", HELVETICA; background: #fff; -webkit-text-size-adjust: 100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+* {box-sizing: border-box;}
+* { outline: none;}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 12px;
+    top: 0;
+    z-index: 9999;
+}
+
+#header > div {
+    vertical-align: middle;
+}
+
+.hd_b1 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hd_b2 {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.hd_b1 > div {
+    vertical-align: middle;
+}
+
+.hd_b2 > div {
+    vertical-align: middle;
+}
+
+.hd_c1, .hd_c2 {
+    display: inline-block;
+}
+
+.hd_c2 {
+    margin-left: 20px;
+}
+
+.hd_c1 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c2 p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hd_c3, .hd_c4 {
+    display: inline-block;
+}
+
+.hd_c3 {
+    margin-right: 20px;
+}
+
+.hd_c3 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hd_c4 img {
+    border-radius: 50px;
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* 사이드바#sb, 센터#center, 지도#mp_wp 기본배치 */
+#sb, #center, #mp_wp {
+    margin-top: 60px;
+    padding-top: 5px;
+}
+
+#sb {
+    width: 92px;
+    height: 500px;
+    /* border: 1px solid red; */
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    background-color: #fff;;
+}
+
+#center {
+    width: calc(100% - 80px - 32.6%);
+    margin: 0 auto;
+    padding-top: 60px;
+    overflow: hidden;
+    border: 1px solid rebeccapurple;
+}
+/* 
+#mp_wp {
+    width: calc(100% - 70px - 60%);
+    height: calc(100% - 60px);
+    padding: 20px;
+    display: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+} */
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* 사이드바 */
+#sb > nav > div {
+    /* margin-bottom: 35px; */
+}
+
+.sb_it {
+    text-align: center;
+}
+
+.sb_svg {
+    width: 24px;
+    height: 24px;
+    fill: #626567;
+}
+
+.sb_it button {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: none;
+}
+
+.sb_btn:hover {
+    background-color: #eff0f1;
+    cursor: pointer;
+}
+
+.sb_btn_active {
+    color: #1967d2;
+}
+
+.sb_svg_active {
+    fill: #1967d2;
+}
+
+.sb_btn_active:hover {
+    background-color: #e8f0fe;
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+/* Box-shadow */
+.bx_hs {
+    transition: box-shadow .1s;
+}
+
+.bx_hs:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(33, 3, 33, .2);
+}
+
+.bx_ts {
+    transition: box-shadow .1s;
+}
+
+.bx_ts:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(20, 20, 20, 0.2);
+}
+/* ------------------------------------ */
+
+
+
+/* 맨 위 메인 */
+.main_1 {
+    width: 100%;
+}
+/* ------------------------------------ */
+
+
+/* 메인 배너 */
+.main {
+    margin-bottom: 80px;
+    margin: 0 auto;
+    height: 300px;
+    width: 1200px;
+    position: relative;
+}
+
+.main img {
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 10px 10px 0 0;
+}
+
+.travel {
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    margin-left: 25px;
+    line-height: 3em;
+}
+
+.travel h1 {
+    /* color: rgb(0, 0, 49); */
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.travel p {
+    /* color: rgb(1, 35, 75); */
+    color: #fff;
+    font-size: 1.2em;
+}
+/* ------------------------------------ */
+
+
+
+/* 메인네비 */
+
+.nv {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    border-top-color: #fff;
+}
+
+.nv_s {
+    display: inline-block;
+    padding-top: 11px;
+    width: 500px;
+    height: 50px;
+}
+
+.nv .h_1 {
+    float: left;
+    margin: 0 5px 0 10px;
+}
+
+.p_1 {
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------ */
+
+
+
+/* Top sights by interest 제목 */
+.ti_wp {
+    width: 5500px;
+    margin-bottom: 80px;
+    /* border: 1px solid green; */
+}
+
+.ti_pd {
+    position: relative;
+}
+
+.ti_it {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    padding-top: 50px;
+}
+
+.ti_it h2 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+.ti_rr {
+    top: 30px !important ;
+}
+/* ------------------------------------ */
+
+
+
+/* 지도 */
+
+.map {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------ */
+
+
+/* 코스 이미지 */
+
+.sg_dp {
+    /* border: 1px solid green; */
+    width: 1500px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.sg_bt h2 {
+    font-weight: normal;
+    font-size: 22px;
+    width: 1200px;
+    height: 100px;
+    border: 1px solid green;
+    padding: 30px;
+    text-align: center;
+}
+
+.sg_st a {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.sg_tt {
+    margin-bottom: 10px;
+}
+
+.sg_it {
+    border: 1px solid #ccc;
+    width: 230px;
+    height: 200px;
+    border-radius: 8px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.sg_it:first-child {
+    margin-left: 0;
+}
+
+.sg_it img {
+    width: 230px;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.sg_it_n {
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    line-height: 3em;
+    color: white;
+    overflow: hidden;
+}
+
+.sg_it_n h2 {
+    font-weight: normal;
+}
+
+
+.sg_mr {
+    right: -4px;
+    top: 0;
+    position: absolute;
+}
+
+.sg_cn {
+    width: 1200px;
+    text-align: center;
+    border: 1px solid green;
+    margin-bottom: 30px;
+    
+}
+
+
+.sg_sg {
+    margin-bottom: 13px;
+}
+
+.sg_mr img {
+    border-radius: 0 8px 0 0;
+}
+
+.sg_sc {
+    position: absolute;
+}
+
+.sg_tt {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.sg_dt {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sg_dt svg {
+    width: 16px;
+    height: 16px;
+    fill: #666;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.trunc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.sg_rr {
+    top: 170px;
+}
+
+
+/* ------------------------------------ */
+
+
+/* 컨테이너 */
+
+.t_con {
+    width: 1200px;
+    border: 1px solid aqua;
+    padding: 30px;
+    color:#333;
+}
+
+.t_con h1 {
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+.t_con p {
+    font-size: 16px;
+    line-height: 1.5em;
+} 
+
+.t_con_i {
+    text-align: center;
+    margin: 30px;
+}
+
+.t_con_i img {
+    margin:15px;
+}
+
+.t_con_i p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px
+}
+
+
+/* ------------------------------------ */
+
+
+/* footer */
+.ft_wp {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    /* border: 1px solid green; */
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ft_lf a, .ft_lf span{
+    color: #1e90ff;
+    margin-right: 15px;
+}
+
+.ft_lf  {
+   margin-bottom: 10px; 
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+/* map */
+/* #map {
+    width: 100%;
+    height: 100%;
+} */
+/* ------------------------------------ */
