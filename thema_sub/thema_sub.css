@@ -477,15 +477,17 @@ p{word-wrap:break-word}
 
 .t_con_i {
     text-align: center;
+    margin: 30px;
 }
 
 .t_con_i img {
-    margin-bottom: 10px;
+    margin:15px;
 }
 
 .t_con_i p {
     font-size: 12px;
     font-weight: bold;
+    margin: 10px
 }
 
 
