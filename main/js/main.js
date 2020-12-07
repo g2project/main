@@ -5,7 +5,7 @@ window.onload=function(){
   showSlides(slideIndex);
 
   // Auto Move Slide
-  var sec = 5000;
+  var sec = 3000;
   setInterval(function(){
     slideIndex++;
     showSlides(slideIndex);
@@ -36,7 +36,7 @@ function showSlides(n) {
     slideIndex = 0; n = 0;
   }else if (n < 0) {
     slideIndex = (size-1);
-    n = (size+1);
+    n = (size-1);
   }
 
   for (i = 0; i < slides.length; i++) {
@@ -49,3 +49,4 @@ function showSlides(n) {
   slides[n].style.display = "block";
   dots[n].className += " active";
 }
+ 
