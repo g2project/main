@@ -36,7 +36,7 @@ function showSlides(n) {
     slideIndex = 0; n = 0;
   }else if (n < 0) {
     slideIndex = (size-1);
-    n = (size-1);
+    n = (size+1);
   }
 
   for (i = 0; i < slides.length; i++) {
