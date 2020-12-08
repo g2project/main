@@ -1,210 +1,107 @@
-
-<!doctype html>
-<html lang="kr">
+<html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5L2N6GF');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168370076-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-168370076-2');
-    </script>
-
-    <meta charset="utf-8">
-    <!-- 모바일용웹 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no, minimal-ui">
-    <!-- 안드로이드 홈화면추가시 상단 주소창 제거 -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- ios홈화면추가시 상단 주소창 제거 -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-            <meta name="copyright" property="copyright" content="&copy;트래블메이커::개인 맞춤형 여행 플랫폼">
-    <meta name="content-language" content="kr">
-    <meta name="build" content="">
-
-    <meta name="keywords" property="keywords" content="트래블메이커, 여행, 맞춤투어, 맞춤여행, 심리테스트, 심리, 테스트, 현지인, 현지인테스트">
-    <meta name="title" property="title" content="현지인 테스트 - 여행 심리테스트">
-    <meta name="description" property="description" content="내가 현지인처럼 여행할 수 있는 나라는?">
-
-    <meta name="og:site_name" property="og:site_name" content="TravelMaker" />
-    <meta name="og:url" property="og:url" content="https://mindtest.travelmakerkorea.com">
-    <meta name="og:title" property="og:title" content="현지인 테스트 - 여행 심리테스트">
-    <meta name="og:description" property="og:description" content="내가 현지인처럼 여행할 수 있는 나라는?">
-    <meta name="og:image" property="og:image" content="https://d238romzwz13za.cloudfront.net/images/share/sns_share_03.png">
-
-    <meta name="twitter:url" property="twitter:url" content="https://mindtest.travelmakerkorea.com">
-    <meta name="twitter:title" property="twitter:title" content="현지인 테스트 - 여행 심리테스트">
-    <meta name="twitter:description" property="twitter:description" content="내가 현지인처럼 여행할 수 있는 나라는?">
-    <meta name="twitter:image" property="twitter:image" content="https://d238romzwz13za.cloudfront.net/images/share/sns_share_03.png">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="8kaBUULOLukUV3UiiAxFc4SUpXUHPN9ksGSfIPms">
-
-    <title>여행 심리테스트</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Scripts -->
-    <script src="https://mindtest.travelmakerkorea.com/js/app.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
-    
-
-    
-    <script src="https://kit.fontawesome.com/676df56a46.js" crossorigin="anonymous"></script>
-
-    <!-- Styles -->
-    <link href="https://mindtest.travelmakerkorea.com/css/app.css" rel="stylesheet">
-    
-
-    <style>[wire\:loading] {display: none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}</style>
-
-    <link rel="apple-touch-icon" sizes="57x57"          href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"          href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"          href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"          href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"        href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"        href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"        href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"        href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"        href="https://d238romzwz13za.cloudfront.net/resources/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"   href="https://d238romzwz13za.cloudfront.net/resources/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32"     href="https://d238romzwz13za.cloudfront.net/resources/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96"     href="https://d238romzwz13za.cloudfront.net/resources/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16"     href="https://d238romzwz13za.cloudfront.net/resources/favicon/favicon-16x16.png">
-    <link rel="manifest"                                href="https://mindtest.travelmakerkorea.com/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage"            content="https://d238romzwz13za.cloudfront.net/resources/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <style type="text/css">
-    #animate {
-        color: #ffffff;
-        left: 100vw;
-        -webkit-animation-duration: 1.5s;
-        animation-duration: 1.5s;
-        -webkit-animation-name: slideLeft;
-        animation-name: slideLeft;
-    }
-    #animateBackGround{
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-name: slideLeft;
-        animation-name: slideLeft;
-    }
-    #animateBackGround2{
-        -webkit-animation-duration: 5s;
-        animation-duration: 5s;
-        -webkit-animation-name: slideBLeft;
-        animation-name: slideBLeft;
-    }
-    #animate .iPlane{
-        top: 40%;
-        position: fixed;font-size: 10rem;
-    }
-
-    @-webkit-keyframes slideLeft {
-        from { left: -20%; }
-        to { right:-20% }
-    }
-    @keyframes  slideLeft {
-        from { left: -20%; }
-        to { right:-20% }
-    }
-    @-webkit-keyframes slideBLeft {
-        from { left: 0%; }
-        to { right:120% }
-    }
-    @keyframes  slideBLeft {
-        from { left: 0%; }
-        to { right:120% }
-    }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="test1.css" rel="stylesheet" type="text/css">
 </head>
-
-
-<body class="bg-white">
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L2N6GF"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <div id="app">
-        <main>
-                <div wire:initial-data="{&quot;id&quot;:&quot;mRQ8Q7QcYl7Rn4Y6d0AT&quot;,&quot;name&quot;:&quot;start&quot;,&quot;redirectTo&quot;:false,&quot;events&quot;:[],&quot;eventQueue&quot;:[],&quot;dispatchQueue&quot;:[],&quot;data&quot;:{&quot;currentPage&quot;:0,&quot;mobile_chk&quot;:&quot;false&quot;},&quot;children&quot;:[],&quot;checksum&quot;:&quot;a6cca4bc2c4d90746ff37ea2649fe2e83afd153fbe1abb7d0823db2405fe890e&quot;}" wire:id="mRQ8Q7QcYl7Rn4Y6d0AT" class="d-flex align-items-center col-12 h-full min-vh-100 px-0"
-     style="overflow: hidden;background: url('img/background_01.png') no-repeat center/cover">
-    <div class="row w-full justify-content-center mx-auto">
-        <div class="col-sm-12 col-md-8 col-lg-10" style="max-width:760px;padding: 0;">
-
-            <div class="" style="max-width: 760px;">
-                <div class="mt-3 sm:mt-12 text-center">
-                    <img src="img/title_02.png" alt=""
-                         class="d-inline sm:w-50 w-9/12" width="100%" style="max-width: 560px;">
-                </div>
-                <div class="mt-12 sm:mt-16 text-center">
-                    <img src="img/TM_character_02.png" alt=""
-                         class="d-inline sm:w-50 w-9/12" width="100%" style="max-width: 760px;">
-                </div>
-                <div class="mt-12 sm:mt-16 text-center">
-                    <a wire:click="startBtn" class="startBtn cursor-pointer">
-                        <img src="img/btn_test_start_02.png" alt=""
-                             class="d-inline sm:w-50 w-9/12" width="100%" style="max-width: 760px;">
-                    </a>
-                </div>
+<body>
+    <div class="mbtiWrap">
+    <div class="survey" style="display: block;">
+        <div class="inner">
+            <div class="list1">
+                <h3 class="blind">                        여행 계획                    </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio01" name="mbtiSurvey1" value="1">
+                        <label for="mbtiRadio01"> A부터 Z까지 계획대로 움직여! </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio01_1" name="mbtiSurvey1" value="2">
+                        <label for="mbtiRadio01_1"> 그날의 feel에 따라 여기저기 자유롭게! </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="list2">
+                <h3 class="blind">                                여행 목적                            </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio02" name="mbtiSurvey2" value="3">
+                        <label for="mbtiRadio02"> 이 멋진 풍경 다~ 보고가야지!
+                            <br> 눈에, 카메라에 담기 바쁘다 바빠~ </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio02_1" name="mbtiSurvey2" value="4">
+                        <label for="mbtiRadio02_1"> 하루에 한 곳만!
+                            <br> 나를 위한 힐링 여행 </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="list3">
+                <h3 class="blind">                                        음식                                    </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio03" name="mbtiSurvey3" value="5">
+                        <label for="mbtiRadio03"> 검색어 1위 맛집,
+                            <br> 당연히 여기로 가야지! </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio03_1" name="mbtiSurvey3" value="6">
+                        <label for="mbtiRadio03_1"> 마니아들만 아는 꼭꼭 숨겨진
+                            <br> 맛집의 맛집을 찾아서 가고 말거야! </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="list4">
+                <h3 class="blind">                                                숙소                                            </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio04" name="mbtiSurvey4" value="7">
+                        <label for="mbtiRadio04"> 저렴하면서 관광지와 거리도 가까운
+                            <br> 그런 숙소가 딱 내 스타일! </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio04_1" name="mbtiSurvey4" value="8">
+                        <label for="mbtiRadio04_1"> 가격이 비싸더라도 프라이빗하고
+                            <br> 아늑한 나만의 공간이 필요해 </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="list5">
+                <h3 class="blind">                                                        여행 스타일                                                    </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio05" name="mbtiSurvey5" value="9">
+                        <label for="mbtiRadio05"> 시간 많아!
+                            <br> 천천히 여유롭게 즐기자고! </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio05_1" name="mbtiSurvey5" value="10">
+                        <label for="mbtiRadio05_1"> 시간 없어!
+                            <br> 봐야할게 한두가지가 아니라고! </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="list6">
+                <h3 class="blind">                                                                가고 싶은 여행지                                                            </h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="mbtiRadio06" name="mbtiSurvey6" value="11">
+                        <label for="mbtiRadio06"> 따도녀, 따도남에 어울리는
+                            <br> 네온싸인 반짝반짝 도시로의 여행 </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mbtiRadio06_1" name="mbtiSurvey6" value="12">
+                        <label for="mbtiRadio06_1"> 온통 초록초록, 파랑파랑 자연내음
+                            <br> 물씬 풍기는 자연으로의 여행 </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button type="button" onclick="resultgo();"> 확인 </button>
             </div>
         </div>
     </div>
-    </div>
-
-<script>
-    function airplaneFly() {
-        var count=3300;
-        if('false'==='true'){
-            count=2500;
-        }
-        return {
-            flying:function() {
-                setInterval(function () {
-                    location.href= 'https://mindtest.travelmakerkorea.com/question';
-                },count);
-            }
-        }
-    }
-</script>
-
-
-        </main>
-    </div>
-
-    <script src="/livewire/livewire.js?id=2e357e509d45977b1c0d" data-turbolinks-eval="false"></script><script data-turbolinks-eval="false">window.livewire = new Livewire();window.livewire_app_url = '';window.livewire_token = '8kaBUULOLukUV3UiiAxFc4SUpXUHPN9ksGSfIPms';/* Make Alpine wait until Livewire is finished rendering to do its thing. */window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};document.addEventListener("DOMContentLoaded", function () {window.livewire.start();});var firstTime = true;document.addEventListener("turbolinks:load", function() {/* We only want this handler to run AFTER the first load. */if(firstTime) {firstTime = false;return;}window.livewire.restart();});document.addEventListener("turbolinks:before-cache", function() {document.querySelectorAll('[wire\\:id]').forEach(function(el) {const component = el.__livewire;const dataObject = {data: component.data,events: component.events,children: component.children,checksum: component.checksum,name: component.name,errorBag: component.errorBag,redirectTo: component.redirectTo,};el.setAttribute('wire:initial-data', JSON.stringify(dataObject));});});</script>
-
-        <script type="text/javascript">
-        $('.startBtn').on('click', function () {
-            setTimeout(function () {
-                location.href= 'https://mindtest.travelmakerkorea.com/question';
-            },3500);
-        });
-        $('.coronafreemapRedirect').on('click', function () {
-            location.href= 'https://map.travelmakerkorea.com';
-        });
-    </script>
+</div>   
 </body>
-
 </html>
-
