@@ -131,9 +131,7 @@ p{word-wrap:break-word}
   height:900px;
   margin: 0 auto;
   margin-left:150px;
-  border:2px solid #000;
-  border-radius: 30px;
-  background-color: #2d374b;
+  
 }
 /* 백그라운드 이미지 */
 * {
@@ -150,7 +148,8 @@ p{word-wrap:break-word}
   margin: auto;
 }
 .slideshow-container .mySlides img {
-  height: 500px;
+  height: 900px;
+  border-radius: ;
 }
 
 /* Hide the images by default */
@@ -164,19 +163,24 @@ p{word-wrap:break-word}
   position: absolute;
   top: 50%;
   width: auto;
+  height: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 13px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 50px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.prev {
+  left: 20px;
+  border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 20px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -209,22 +213,6 @@ p{word-wrap:break-word}
   position: absolute;
   bottom:20px;
   right:10px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #2d374b;
 }
 
 /* Fading animation */
@@ -262,7 +250,12 @@ p{word-wrap:break-word}
   margin-left:6%;
   
 }
-
+.weather_wrap{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border: 1px solid #2d374b;
+}
 /* 메인 콘텐츠 끝 */
 /* 푸터 */ 
 
