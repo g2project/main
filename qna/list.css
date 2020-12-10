@@ -188,7 +188,6 @@ p{word-wrap:break-word}
 .ct_fl {
 	width: 100%;
     height: 35px;
-	border: 1px solid red;
 }
 
 .ct_oo td, .ct_cd td {
@@ -233,10 +232,7 @@ p{word-wrap:break-word}
 	outline: none;
 }
 
-.ct_fl td:nth-child(2) form {
-    background-color: red;
-    float: right;
-}
+
 
 
 
