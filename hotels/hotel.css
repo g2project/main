@@ -265,7 +265,7 @@ p{word-wrap:break-word}
     /* height: 100%; */
     overflow: hidden;
     display: inline-block;
-    /* position: absolute; */
+    position: absolute;
     border-style: none;
     border-radius: 10px;
             
