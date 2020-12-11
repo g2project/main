@@ -1,4 +1,72 @@
-  
+
+//사진 슬라이드 
+// $(function(){
+
+//     $('.ma_dt_wp').each(function(){
+//         var $container = $(this),              
+//             $slideGroup = $container.find('.slideshow-slides'),
+//             $slides = $slideGroup.find('.ma_dt_ec'),
+//             $nav = $container.find('.slideshow-nav'),
+
+
+//             slideCount = 4,                     
+//             indicatorHTML = '',
+//             currentIndex = 0,
+//             duration = 500,
+//             easing = 'easeInOutExpo',
+//             timer;
+
+//         $slides.each(function(i){
+//             $(this).css({left:20 * i + '%'});
+//             indicatorHTML += '<a href="#">' + (i + 1) + '</a>';     
+//         });
+
+//         function goToslide(index) {
+//             $slideGroup.animate({left:-20 * index + '%'}, duration, easing); //슬라이드 할 때 얼마나 이동하는지
+//             currentIndex = index;
+
+//             updateNav();
+//         }
+
+//         function updateNav(){
+//             var $navPrev = $nav.find('.prev'),
+//                 $navNext = $nav.find('.next');
+
+//             if(currentIndex == 0){
+//                 $navPrev.addClass('disabled');
+//             }else {
+//                 $navPrev.removeClass('disabled');
+//             }
+
+//             if(currentIndex == slideCount - 1){
+//                 $navNext.addClass('disabled');
+//             }else {
+//                 $navNext.removeClass('disabled');
+//             }
+
+//         }
+
+
+//         $nav.on('click','a',function(event){
+//             event.preventDefault();
+//             if($(this).hasClass('prev')){
+//                 goToslide(currentIndex - 1);
+//             }else {
+//                 goToslide(currentIndex + 1);
+//             }
+//         });
+
+
+//         goToslide(currentIndex);
+
+//     });
+
+// });
+
+
+
+
+
 $(function(){
     $(document).on('click', '.sb_it button', function(){
         $('.sb_it button').removeClass('sb_btn_active');
@@ -11,6 +79,7 @@ $(function(){
 });
 
 
+//향토음식 스크립트
 $(function(){
   
     $(".pf_wp").on("click",function(){
@@ -27,7 +96,7 @@ $(function(){
 
 
 
-
+//sights 스크립트
 var scriptArray = ["first_layer_script", "second_layer_script", "third_layer_script","fourth_layer_script",
                             "fifth_layer_script", "sixth_layer_script","seventh_layer_script","eighth_layer_script","ninth_layer_script","tenth_layer_script","eleventh_layer_script","twelfth_layer_script","thirteenth_layer_script",
                             "fourteenth_layer_script","fifteenth_layer_script","sixteenth_layer_script","seventeenth_layer_script"];

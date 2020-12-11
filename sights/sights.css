@@ -891,6 +891,7 @@ p{word-wrap:break-word}
 .ma_dt_pp {
     width: 5500px;
     position: relative;
+    overflow: hidden;
 }
 
 .ma_dt_ec {
@@ -1035,3 +1036,4 @@ p{word-wrap:break-word}
     line-height: 3em;
 }
 /* ------------------------------------ */
+
