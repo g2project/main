@@ -236,25 +236,26 @@ p{word-wrap:break-word}
 /* 메인 콘텐츠 */
 .content2{
   border: solid 2px #000;
-  border-radius: 30px/40px;
-  width: 1200px;
+  width: 90%;
   height: 300px;
-  margin: 0 auto;
   margin-left: 150px;
-  margin-top: 20px;
   margin-right: 10%;
   padding:30px;
-  background-color: #2d374b;
+ 
 }
 .mn_ct img{
   margin-left:6%;
   
 }
 .weather_wrap{
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+  margin-left: 150px;
   border: 1px solid #2d374b;
+  
+}
+.weather{
+  
 }
 /* 메인 콘텐츠 끝 */
 /* 푸터 */ 
