@@ -251,23 +251,13 @@ p{word-wrap:break-word}
   height: 300px;
   margin-left: 150px;
   border: 1px solid #2d374b;
-
+  padding:150px;
+  padding-left: 40%;
 }
 .weather{
   color:white;
 }
-.Currlcon, .CurrTemp{
-  display: inline-block;
-  font-size:  100px;
-  text-align: center;
-}
-.Currlcon{
-  margin-right: 2px;
-}
-.City{
-  font-size: 100px;
-  text-align: center;
-}
+
 /* 메인 콘텐츠 끝 */
 /* 푸터 */ 
 
