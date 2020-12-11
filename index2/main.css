@@ -149,7 +149,6 @@ p{word-wrap:break-word}
 }
 .slideshow-container .mySlides img {
   height: 900px;
-  border-radius: ;
 }
 
 /* Hide the images by default */
@@ -252,10 +251,22 @@ p{word-wrap:break-word}
   height: 300px;
   margin-left: 150px;
   border: 1px solid #2d374b;
-  
+
 }
 .weather{
-  
+  color:white;
+}
+.Currlcon, .CurrTemp{
+  display: inline-block;
+  font-size:  100px;
+  text-align: center;
+}
+.Currlcon{
+  margin-right: 2px;
+}
+.City{
+  font-size: 100px;
+  text-align: center;
 }
 /* 메인 콘텐츠 끝 */
 /* 푸터 */ 
