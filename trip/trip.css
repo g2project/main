@@ -341,3 +341,22 @@ p{word-wrap:break-word}
 }
 
 /* ------------------------------------ */
+
+/* footer */
+.ft_wp {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    /* border: 1px solid green; */
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ft_lf a, .ft_lf span{
+    color: #1e90ff;
+    margin-right: 15px;
+}
+
+.ft_lf  {
+   margin-bottom: 10px; 
+}
+/* ------------------------------------ */
