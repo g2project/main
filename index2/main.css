@@ -148,12 +148,22 @@ p{word-wrap:break-word}
   background-color: #e8f0fe;
 }
 /* ------------------------------------ */
-#mainFrm{
-  width:90%;
-  height:900px;
+
+
+/* 컨테이너 */
+.container {
   margin: 0 auto;
-  margin-left:150px;
-  
+  width:94%;
+  margin-left:100px;
+  /* border: 1px solid #000; */
+}
+/* ------------------------------------ */
+
+
+/* 슬라이드 */
+#mainFrm{
+  width:100%;
+  height:900px;
 }
 /* 백그라운드 이미지 */
 * {
@@ -196,102 +206,206 @@ p{word-wrap:break-word}
 
 .prev {
   left: 20px;
+  margin-top: 20px;
   border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 20px;
+  margin-top: 20px;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 40px;
-  padding: 8px 12px;
+  padding: 32px 12px 0px 32px;
   position: absolute;
-  bottom: 8px;
-  width: 400px;
-  height: 70px;
-  text-align: center;
-  top: 70px;
-  right:10px;
-  background-color: #2d374b;
-  border-radius: 20px;
+  bottom: -149.5px;
+  width: 100%;
+  height: 120px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.46);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom:20px;
-  right:10px;
-}
+/* ------------------------------------ */
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-/* 백그라운드 이미지 끝 */
 /* 메인 콘텐츠 */
-.content2{
-  border: solid 2px #000;
-  width: 90%;
-  height: 300px;
-  margin-left: 150px;
-  margin-right: 10%;
-  padding:30px;
- 
-}
-.mn_ct img{
-  margin-left:6%;
-  
-}
 .weather_wrap{
-  width: 90%;
-  height: 300px;
-  margin-left: 150px;
-  border: 1px solid #2d374b;
-  
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
 }
 
-/* 메인 콘텐츠 끝 */
-/* 푸터 */ 
-
-.footerLink ul {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.2em;
+.w_w1 {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  padding-top: 10px;
+  /* border: 1px solid red; */
 }
 
-.footerLink li{
-    display: inline-block;
+.now {
+  float: left;
+  margin: 15px 11px 0 0;
 }
 
-.footerLink a{
-    display: inline-block; /*인라인한 요소에 padding값을 줄경우 display: inline-block 사용해줘야함*/
-    padding: 20px;
-    color: royalblue;
+.p_1 {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  color:#444444;
+  padding-top: 25px;
 }
-/* ------------------------------------ */ 
+
+.weather {
+  float: left;
+}
+
+.m_j{
+  text-align: center;
+  width: 100%;
+  height: 180px;
+  /* border: 1px solid blue; */
+  padding-top: 90px;
+  font-size: 1.8em;
+}
+
+
+
+.thema {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid yellow; */
+}
+
+
+.ts_wp {
+  margin-bottom: 30px;
+  /* border: 1px solid blue; */
+}
+
+.ts_wp > div:nth-child(4n) {
+  margin-right: 0;
+}
+
+.ts_pt {
+  width: calc((100% - 40px)/4);
+  height: calc(200px + 4vw);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+  vertical-align: top;
+}
+
+.ts_pt:hover{
+  box-shadow: 0px 4px 5px rgb(161, 161, 161);
+}
+
+.pt_im {
+  width: 100%;
+  height: 10.5vw;   /*이미지 들어가는곳 크기*/
+  /* border: 1px solid green; */
+}
+
+.pt_im img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.pt_dt {
+  width: 100%;
+  padding: 7px 10px 0 10px;
+}
+
+.pt_tt {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pt_rt {
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.pt_rt div {
+  display: inline;
+  font-size: 0;
+}
+
+.pt_rt div span {
+  font-size: 16px;
+  padding: 0;
+  margin-right: -5px;
+}
+
+.pt_sf {
+  color: #fbbc04;
+}
+
+.pt_rt div+span {
+  margin-left: 10px;
+}
+
+.pt_ap {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.pt_sv {
+  width: 34px;
+  height: 34px;
+  padding-top: 7px;
+  border-radius: 50%;
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  background: rgba(48, 48, 48, 0.6);
+}
+
+.pt_sv svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+/* ------------------------------------ */
+
+
+/* footer */
+.ft_wp {
+  margin: 20px 0 30px 0;
+  /* border: 1px solid green; */
+  font-weight: normal;
+  font-size: 14px;
+}
+
+
+.ft_lf  {
+ text-align: right;
+ margin-bottom: 30px; 
+ color: rgb(112, 112, 112);
+ font-size: 11px;
+}
+
+.ft_ls{
+  text-align: center;
+}
+/* ------------------------------------ */
