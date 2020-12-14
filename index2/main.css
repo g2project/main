@@ -206,14 +206,14 @@ p{word-wrap:break-word}
 
 .prev {
   left: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 3px 0 0 3px;
 }
 
