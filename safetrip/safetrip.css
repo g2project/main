@@ -269,7 +269,23 @@ p{word-wrap:break-word}
 
 /* ------------------------------------ */
 
-
+/* 탭 */
+.asd {
+    width: 380px;
+    background-color: #cd0200;
+    color:
+}
+.tap a{
+  
+    border: 1px solid #000;
+    background-color: #e8f0fe;
+    color:#959595;
+}
+.tap li{
+    display: flex;
+    width: 380px;
+}
+/* ------------------------------------ */
 
 
 
@@ -288,7 +304,7 @@ p{word-wrap:break-word}
     border: 1px solid #000;
 }
 
-.tip {
+.tip1 {
     width: 100%;
     margin-top: 50px;
     /* border: 1px solid red;  */
@@ -332,4 +348,60 @@ p{word-wrap:break-word}
     color: #5a5a5a;
 }
 
+.safeGuideTwo dt{
+    font-weight: 700;
+    font-size:26px;
+    line-height: 34px;
+    padding: 0 0 10px;
+ }
+ .safeGuideTwo dl dd {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 0 20px;
+}
+.firm_box table td, .firm_box table th {
+    padding: 15px 0;
+    border: 1px solid #e2e2e2;
+    height: auto;
+    vertical-align: top;
+    font-size: 14px;
+}
+.firm_box table th {
+    font-weight: 700;
+    background: #f2f2f2;
+}
+.safeGuideThree .copyright {
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 80px 50px;
+    line-height: 22px;
+}
+.firm_box table td, .firm_box table th {
+    padding: 15px 0;
+    border: 1px solid #e2e2e2;
+    height: auto;
+    vertical-align: top;
+    font-size: 14px;
+}
+.firm_box table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-indent: initial;
+}
+.firm_box th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+.firm_box td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.firm_box {
+    margin-top: 50px;
+    text-align: center;
+}
 /* ------------------------------------- */
