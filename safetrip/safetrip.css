@@ -270,20 +270,22 @@ p{word-wrap:break-word}
 /* ------------------------------------ */
 
 /* 탭 */
-.asd {
-    width: 380px;
-    background-color: #cd0200;
-    color:
-}
 .tap a{
-  
-    border: 1px solid #000;
-    background-color: #e8f0fe;
+    width: 400px;
+    height: 100%;
+    font-size: 18px;
     color:#959595;
 }
 .tap li{
-    display: flex;
-    width: 380px;
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+    color:orange;
+    padding-top: 10px;
+    border: 1px solid #959595;
+    
 }
 /* ------------------------------------ */
 
@@ -299,9 +301,9 @@ p{word-wrap:break-word}
 }
 
 .m_tap {
-    width: 1200px;
+    width: 1250px;
     height: 50px;
-    border: 1px solid #000;
+    
 }
 
 .tip1 {
