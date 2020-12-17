@@ -324,15 +324,17 @@ p{word-wrap:break-word}
 }
 
 .pt_tt {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 17px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #5e5c5c;
 }
 
 .pt_rt {
     font-weight: normal;
     font-size: 12px;
     margin-bottom: 10px;
+    color: #5e5c5c;
 }
 
 .pt_rt div {
