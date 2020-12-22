@@ -774,7 +774,7 @@ p{word-wrap:break-word}
     height: calc(610px-0.01vw);
     padding: 15px;
     background-color: #eee;
-    transition: height 0.1s, width 0s, padding 0.1s, visibility 0.1s, opacity 0.1s ease-out;
+    
 }
 
 .ma_dt_oc {
@@ -865,6 +865,20 @@ p{word-wrap:break-word}
     margin-bottom: 20px;
 }
 
+
+/* .scrollit {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 130px;
+} */
+
+
+
+
+
+
+
+
 .ma_dt_at {
     font-size: 13px;
     line-height: 1.7em;
@@ -879,6 +893,11 @@ p{word-wrap:break-word}
 .ma_rt_tb {
     vertical-align: top;
 }
+
+/* .ma_rt_tb img {
+    height: 30px;
+    width: 30px;
+} */
 
 .ma_bt_sy {
     padding-left: 15px;
@@ -933,3 +952,24 @@ p{word-wrap:break-word}
     line-height: 3em;
 }
 /* ------------------------------------ */
+
+
+
+
+
+
+.scpt_active {
+    visibility: visible;
+    opacity: 1;
+    height: 580px;
+    width: 100%;
+    transition: height 0.1s, width 0s, padding 0.1s, visibility 0.1s, opacity 0.1s ease-out;
+}
+
+.scpt_inactive {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: height 0.1s, width 0s, padding 0.1s, visibility 0.1s, opacity 0.1s ease-out;
+}
